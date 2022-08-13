@@ -1,0 +1,88 @@
+@import './variables';
+@import './mixins';
+@import './globalStyles';
+
+._mark {
+  border-left: 5px solid $mColor; 
+  padding-left: $space;
+}
+
+._invalid {
+  input {
+    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.2);
+  }
+}
+
+._column {
+  display: flex;
+  flex-direction: column;
+  gap: $space;
+}
+
+._row {
+  display: flex;
+  gap: $space;
+  align-items: center;
+}
+
+._notf {
+  display: flex;
+
+  p {
+    font-weight: bold;
+    margin: 0;
+    color: red;
+  }
+
+  &-v {
+    p {
+      color: green;
+    }
+  }
+}
+
+._img-wrapper {
+  @include all-cent;
+}
+
+._tag {
+  padding: 5px;
+  border-radius: 5px;
+  background: white;
+	backdrop-filter: blur(10px);
+  cursor: pointer;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.7);
+  }
+
+  &-wrapper {
+    @include all-cent;
+    background: rgba(0, 0, 0, 0.7);
+    gap: 5px;
+    flex-wrap:wrap;
+    max-width: 208px;
+    padding: 5px;
+  }
+}
+
+._btn {
+  @include all-cent;
+  gap: $space / 2;
+  border-radius: $br-rad;
+  height: 50px;
+  border: none;
+  padding: $space;
+  background-color: $sColor;
+  font-family: 'Montserrat', sans-serif;
+  transition: $transition;
+
+  &:hover {
+    background-color: $mColor;
+  }
+
+  img {
+    max-height: 20px;
+    width: auto;
+  }
+}
