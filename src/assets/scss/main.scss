@@ -2,6 +2,33 @@
 @import './mixins';
 @import './globalStyles';
 
+._link {
+  @include all-cent;
+  text-decoration: none;
+  padding: $mSpace;
+  border-radius: $br-rad * 2;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: $transition;
+  gap: $mSpace / 2;
+
+  &__active {
+    background-color: $mColor;
+  }
+
+  &:hover {
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    background: rgba(255,255,255,0.3);
+  }
+
+  img {
+    max-height: 20px;
+    width: auto;
+  }
+}
+
 ._mark {
   border-left: 5px solid $mColor; 
   padding-left: $space;

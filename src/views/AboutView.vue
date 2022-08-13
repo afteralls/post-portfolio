@@ -9,10 +9,10 @@ export default {
 </script>
 
 <style lans="scss">
-img {
+/* img {
   position: absolute;
   height: 85vh;
   bottom: 0;
   left: 0;
-}
+} */
 </style>
