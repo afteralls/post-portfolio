@@ -1,14 +1,17 @@
 <template>
   <nav class="navbar">
-    <router-link class="_link" to="/"><h3>Главная</h3></router-link>
-    <router-link class="_link" to="/about"><h3>Обо мне</h3></router-link>
-    <router-link class="_link" to="/portfolio"><h3>Поcледние работы</h3></router-link>
+    <router-link class="_link" to="/"><p>Главная</p></router-link>
+    <router-link class="_link" to="/about"><p>Обо мне</p></router-link>
+    <router-link class="_link" to="/portfolio"><p>Поcледние работы</p></router-link>
+    <the-dark-mode-toggle/>
   </nav>
 </template>
 
 <script>
-export default {
+import TheDarkModeToggle from './TheDarkModeToggle'
 
+export default {
+  components: { TheDarkModeToggle }
 }
 </script>
 
@@ -18,7 +21,7 @@ export default {
 .navbar {
   @include all-cent;
   width: 100%;
-  gap: 50px;
+  gap: $space;
   height: 15vh;
   box-sizing: border-box;
   border-bottom: 1px solid black;

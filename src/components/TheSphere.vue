@@ -1,5 +1,6 @@
 <template>
 <div class="animation-wrapper">
+  <div class="sourse"><img src="../assets/svg/info.svg"/></div>
   <div class="sphere-animation">
     <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
       <defs>
@@ -40,6 +41,8 @@
 <script>
 import anime from 'animejs/lib/anime.es.js'
 import { onMounted } from 'vue'
+import tippy from 'tippy.js'
+import 'tippy.js/dist/tippy.css'
 
 const fitElementToParent = (el, padding) => {
   let timeout = null
@@ -105,9 +108,20 @@ const sphereAnimation = () => {
   }
   init()
 }
+
 export default {
   setup () {
-    onMounted(() => { sphereAnimation() })
+    onMounted(() => {
+      sphereAnimation()
+
+      tippy('.sourse', {
+        content: '<div class="sourse__info">Автор оригинального дизайна сферы<a href="https://twitter.com/juliangarnier" class="sourse__link">@JulianGarnier</a></div>',
+        arrow: false,
+        allowHTML: true,
+        interactive: true,
+        placement: 'left'
+      })
+    })
   }
 }
 </script>
@@ -119,6 +133,46 @@ export default {
   @include all-cent;
   width: 38%;
   height: 85vh;
+}
+
+.sourse {
+  position: absolute;
+  background-color: $mColor;
+  border-radius: $br-rad;
+  @include all-cent;
+  z-index: 5;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  bottom: 15px;
+  right: 15px;
+
+  &__info {
+    display: flex;
+    padding: $mSpace;
+    max-width: 130px;
+    margin: $mSpace;
+    text-align: center;
+    @include all-cent;
+    gap: $mSpace;
+    flex-direction: column;
+  }
+
+  &__link {
+    padding: 15px;
+    background-color: $mColor;
+    border-radius: $br-rad;
+
+    a, a:visited {
+      color: $mColor;
+      font-weight: 700;
+    }
+  }
+
+  img {
+    height: 20px;
+    width: auto;
+  }
 }
 
 .sphere-animation {

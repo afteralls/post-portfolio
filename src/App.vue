@@ -21,14 +21,6 @@ export default {
 <style lang="scss">
 @import './assets/scss/main';
 
-#app {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
 .route {
   &-enter-from {
     opacity: 0;

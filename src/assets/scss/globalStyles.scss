@@ -1,15 +1,35 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700;900&display=swap');
 @import './variables';
 @import './mixins';
 
 body {
   margin: 0; padding: 0;
-  background-color: #252423;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 
   h1, h2, h3, p {
     margin: 0;
+  }
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #252423;
+
+  h1, h3, p {
+    color: white;
+  }
+}
+
+.light {
+  background-color: white;
+
+  h1, h3, p {
+    color: #252423;
   }
 }
 
@@ -19,4 +39,14 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+a, a:visited {
+  color: white;
 }

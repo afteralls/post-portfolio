@@ -1,10 +1,13 @@
 <template>
   <div class="home">
     <div class="home__title">
-      <h1><violet>Я</violet> именно тот,<br>кто <violet>вам нужен</violet></h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit repudiandae iste unde ea nobis accusantium aspernatur obcaecati exercitationem cumque? Culpa nisi dolorem aliquid molestiae iure recusandae impedit! Minima, facilis iusto?</p>
+      <div class="_column" style="gap: 5px">
+        <h3>Скорее всего,</h3>
+        <h1><violet>Я</violet> именно тот,<br>кто <violet>вам нужен</violet></h1>
+      </div>
+      <p>Frontend-разработчик, главной целью которого является создание качественных, детально проработанных веб-приложений и интерфейсов с использоваием современных технологий и подходов</p>
       <router-link class="_link" to="/about">
-        <h3>Подробнее</h3>
+        <p>Подробнее</p>
         <img src="../assets/svg/arrow-right.svg"/>
       </router-link>
     </div>
@@ -38,7 +41,6 @@ export default {
     z-index: 5;
     max-width: 60%;
     text-transform: uppercase;
-    font-size: 900;
     text-align: right;
     display: flex;
     flex-direction: column;
@@ -54,15 +56,12 @@ export default {
     & ._link {
       background-color: $mColor;
       padding: $mSpace $space;
+      font-weight: 600;
 
       &:hover {
         box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
         background: rgba(255,255,255,0.3);
       }
-    }
-
-    p {
-      font-weight: 300;
     }
   }
 }

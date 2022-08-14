@@ -6,10 +6,11 @@
   @include all-cent;
   text-decoration: none;
   padding: $mSpace;
-  border-radius: $br-rad * 2;
+  border-radius: $br-rad;
   text-align: center;
   color: white;
   text-transform: uppercase;
+  font-weight: 700;
   letter-spacing: 3px;
   transition: $transition;
   gap: $mSpace / 2;
@@ -93,23 +94,23 @@
   }
 }
 
-._btn {
-  @include all-cent;
-  gap: $space / 2;
-  border-radius: $br-rad;
-  height: 50px;
-  border: none;
-  padding: $space;
-  background-color: $sColor;
-  font-family: 'Montserrat', sans-serif;
-  transition: $transition;
+// ._btn {
+//   @include all-cent;
+//   gap: $space / 2;
+//   border-radius: $br-rad;
+//   height: 50px;
+//   border: none;
+//   padding: $space;
+//   background-color: $sColor;
+//   font-family: 'Montserrat', sans-serif;
+//   transition: $transition;
 
-  &:hover {
-    background-color: $mColor;
-  }
+//   &:hover {
+//     background-color: $mColor;
+//   }
 
-  img {
-    max-height: 20px;
-    width: auto;
-  }
-}
+//   img {
+//     max-height: 20px;
+//     width: auto;
+//   }
+// }
