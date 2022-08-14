@@ -5,6 +5,8 @@
 body {
   margin: 0; padding: 0;
   box-sizing: border-box;
+  background-color: #252423;
+  color: white;
   font-family: 'Montserrat', sans-serif;
 
   h1, h2, h3, p {
@@ -18,19 +20,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #252423;
-
-  h1, h3, p {
-    color: white;
-  }
-}
-
-.light {
-  background-color: white;
-
-  h1, h3, p {
-    color: #252423;
-  }
 }
 
 ::selection {
