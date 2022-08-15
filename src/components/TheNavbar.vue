@@ -3,15 +3,13 @@
     <router-link class="_link" to="/"><p>Главная</p></router-link>
     <router-link class="_link" to="/about"><p>Обо мне</p></router-link>
     <router-link class="_link" to="/portfolio"><p>Поcледние работы</p></router-link>
-    <the-dark-mode-toggle/>
   </nav>
 </template>
 
 <script>
-import TheDarkModeToggle from './TheDarkModeToggle'
 
 export default {
-  components: { TheDarkModeToggle }
+
 }
 </script>
 

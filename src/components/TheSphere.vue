@@ -115,7 +115,7 @@ export default {
       sphereAnimation()
 
       tippy('.sourse', {
-        content: '<div class="sourse__info">Автор оригинального дизайна сферы<a href="https://twitter.com/juliangarnier" class="sourse__link">@JulianGarnier</a></div>',
+        content: '<div class="sourse__info">Автор оригинального дизайна сферы:<a href="https://twitter.com/juliangarnier" class="sourse__link">@JulianGarnier</a></div>',
         arrow: false,
         allowHTML: true,
         interactive: true,
@@ -150,7 +150,7 @@ export default {
   &__info {
     display: flex;
     padding: $mSpace;
-    max-width: 130px;
+    max-width: 135px;
     margin: $mSpace;
     text-align: center;
     @include all-cent;
@@ -159,13 +159,19 @@ export default {
   }
 
   &__link {
-    padding: 15px;
+    padding: $mSpace;
     background-color: $mColor;
     border-radius: $br-rad;
+    transition: $transition;
 
     a, a:visited {
       color: $mColor;
       font-weight: 700;
+    }
+
+    &:hover {
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+      background: $sColor;
     }
   }
 
