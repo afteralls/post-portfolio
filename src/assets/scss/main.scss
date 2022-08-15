@@ -14,84 +14,52 @@
   letter-spacing: 3px;
   transition: $transition;
   gap: $mSpace / 2;
+  position: relative;
 
-  &__active {
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    height: 3px;
     background-color: $mColor;
+    transition: 0.15s ease-out;
+    opacity: 0;
+    transform: translateY(5px);
   }
 
   &:hover {
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-    background: $sColor;
+    &::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 
-  img {
-    max-height: 20px;
-    width: auto;
+  &-active {
+    background-color: $mColor;
   }
-}
 
-._mark {
-  border-left: 5px solid $mColor; 
-  padding-left: $space;
-}
+  &-active:hover {
+    &::after {
+      opacity: 0;
+    }
+  }
 
-._invalid {
-  input {
-    box-shadow: 0 0 15px 5px rgba(255, 0, 0, 0.2);
+  &-active::after {
+    opacity: 0;
   }
 }
 
 ._column {
   display: flex;
   flex-direction: column;
-  gap: $space;
+  gap: $mSpace;
 }
 
 ._row {
   display: flex;
-  gap: $space;
+  gap: $mSpace;
   align-items: center;
-}
-
-._notf {
-  display: flex;
-
-  p {
-    font-weight: bold;
-    margin: 0;
-    color: red;
-  }
-
-  &-v {
-    p {
-      color: green;
-    }
-  }
-}
-
-._img-wrapper {
-  @include all-cent;
-}
-
-._tag {
-  padding: 5px;
-  border-radius: 5px;
-  background: white;
-	backdrop-filter: blur(10px);
-  cursor: pointer;
-
-  &:hover {
-    background: rgba(255, 255, 255, 0.7);
-  }
-
-  &-wrapper {
-    @include all-cent;
-    background: rgba(0, 0, 0, 0.7);
-    gap: 5px;
-    flex-wrap:wrap;
-    max-width: 208px;
-    padding: 5px;
-  }
 }
 
 // ._btn {

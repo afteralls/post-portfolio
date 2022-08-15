@@ -144,14 +144,14 @@ export default {
   width: 50px;
   height: 50px;
   text-align: center;
-  bottom: 15px;
-  right: 15px;
+  bottom: $space;
+  right: $space;
 
   &__info {
     display: flex;
     padding: $mSpace;
     max-width: 135px;
-    margin: $mSpace;
+    margin: $space $mSpace;
     text-align: center;
     @include all-cent;
     gap: $mSpace;

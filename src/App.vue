@@ -24,7 +24,6 @@ export default {
 .route {
   &-enter-from {
     opacity: 0;
-    transform: translateX(100px);
 
     @media (max-width: $extra-medium) {
       transform: none;
@@ -35,7 +34,6 @@ export default {
   }
   &-leave-to {
     opacity: 0;
-    transform: translateX(-100px);
 
     @media (max-width: $extra-medium) {
       transform: none;

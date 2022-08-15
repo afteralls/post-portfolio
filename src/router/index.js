@@ -11,7 +11,7 @@ const routes = [
   },
   {
     path: '/about',
-    name: 'Обо мне',
+    name: 'Резюме',
     component: AboutView
   },
   {
@@ -29,8 +29,8 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  linkActiveClass: '_link__active',
-  linkExactActiveClass: '_link__active'
+  linkActiveClass: '_link-active',
+  linkExactActiveClass: '_link-active'
 })
 
 router.beforeEach((to, _, next) => {

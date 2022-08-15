@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <router-link class="_link" to="/"><p>Главная</p></router-link>
-    <router-link class="_link" to="/about"><p>Обо мне</p></router-link>
+    <router-link class="_link" to="/about"><p>Резюме</p></router-link>
     <router-link class="_link" to="/portfolio"><p>Поcледние работы</p></router-link>
   </nav>
 </template>
