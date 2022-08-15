@@ -12,16 +12,34 @@
       </router-link>
     </div>
     <the-sphere/>
-    <app-contacts/>
+    <div class="home__contacts">
+      <div class="home__contact">
+        <a href="mailto:postapocalypsecore@gmail.com">
+          <img src="../assets/svg/mail.svg"/>
+          <p>Email</p>
+        </a>
+      </div>
+      <div class="home__contact">
+        <a href="https://t.me/apocalypsecore">
+          <img src="../assets/svg/telegram.svg"/>
+          <p>Telegram</p>
+        </a>
+      </div>
+      <div class="home__contact">
+        <a href="https://github.com/post-apocalypse">
+          <img src="../assets/svg/github.svg"/>
+          <p>GitHub</p>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import TheSphere from '../components/TheSphere'
-import AppContacts from '../components/AppContacts'
 
 export default {
-  components: { TheSphere, AppContacts }
+  components: { TheSphere }
 }
 </script>
 
@@ -56,23 +74,20 @@ export default {
   &__link {
     @include all-cent;
     text-decoration: none;
-    padding: $mSpace;
     border-radius: $br-rad;
     text-align: center;
     color: white;
     text-transform: uppercase;
-    font-weight: 700;
     letter-spacing: 3px;
     transition: $transition;
     gap: $mSpace / 2;
-    position: relative;
     background-color: $mColor;
     padding: $mSpace $space;
     font-weight: 600;
 
     &:hover {
       box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
-      background: rgba(255,255,255,0.3);
+      background: $sColor;
     }
 
     img {
@@ -81,18 +96,33 @@ export default {
     }
   }
 
-  & .contacts {
+  &__contacts {
+    @include all-cent;
     position: absolute;
     bottom: $space;
     left: $space;
+    gap: $mSpace;
   }
 
-  & .contact {
-    gap: $space;
-    height: 50px;
-    width: auto;
-    padding: 0 $mSpace;
+  &__contact {
     border-radius: $br-rad;
+    @include all-cent;
+    height: 50px;
+    padding: 0 $mSpace;
+    text-align: center;
+    transition: $transition;
+    background-color: $mColor;
+
+    &:hover {
+      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+      background-color: $sColor !important;
+    }
+
+    img {
+      margin-right: $mSpace / 2;
+      height: 20px;
+      width: auto;
+    }
   }
 }
 
