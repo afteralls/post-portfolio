@@ -133,6 +133,14 @@ export default {
   @include all-cent;
   width: 38%;
   height: 85vh;
+
+  @media (max-width: $extra-medium) {
+    width: 45%;
+  }
+
+  @media (max-width: 400px) {
+    width: 60%;
+  }
 }
 
 .sourse {
@@ -156,6 +164,12 @@ export default {
     @include all-cent;
     gap: $mSpace;
     flex-direction: column;
+
+    @media (max-width: $extra-medium) {
+      font-size: 0.7em;
+      max-width: 15vh;
+      margin: ($space * 2.5) $mSpace;
+    }
   }
 
   &__link {
@@ -178,6 +192,12 @@ export default {
   img {
     height: 3.3vh;
     width: auto;
+  }
+
+  @media (max-width: $extra-medium) {
+    margin: $mSpace / 2;
+    bottom: $mSpace / 2;
+    right: $mSpace / 2;
   }
 }
 

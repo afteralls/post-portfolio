@@ -37,9 +37,18 @@
 
 <script>
 import TheSphere from '../components/TheSphere'
+import { ref, onMounted } from 'vue'
 
 export default {
-  components: { TheSphere }
+  components: { TheSphere },
+  setup () {
+    const currentWidth = ref(0)
+    const updateWidth = () => { currentWidth.value = window.innerWidth }
+    window.addEventListener('resize', updateWidth)
+    onMounted(() => { updateWidth() })
+
+    return { currentWidth }
+  }
 }
 </script>
 
@@ -48,11 +57,18 @@ export default {
 
 .home {
   height: 85vh;
+  position: relative;
   width: 100%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-around;
+
+  @media (max-width: $extra-small) {
+    flex-direction: column;
+    height: 90vh;
+    order: 1;
+  }
 
   &__title {
     z-index: 5;
@@ -68,6 +84,34 @@ export default {
       font-size: 5em;
       font-weight: 900;
       line-height: 0.9;
+    }
+
+    @media (max-width: $medium) {
+      h1 {
+        font-size: 4em;
+      }
+    }
+
+    @media (max-width: $extra-medium) {
+      h1 {
+        font-size: 3em;
+      }
+      max-width: 100%;
+    }
+
+    @media (max-width: $extra-small) {
+      align-items: center;
+      text-align: center;
+      margin: $mSpace;
+      gap: $mSpace;
+
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p {
+        font-size: 0.7em;
+      }
     }
   }
 
@@ -102,6 +146,10 @@ export default {
     bottom: $space;
     left: $space;
     gap: $mSpace;
+
+    @media (max-width: $small) {
+      display: none;
+    }
   }
 
   &__contact {

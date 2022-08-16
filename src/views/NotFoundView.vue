@@ -18,6 +18,10 @@
 .not-found {
   height: 85vh;
   width: 100vw;
-  @include all-cent
+  @include all-cent;
+
+  @media (max-width: $extra-medium) {
+    height: 90vh;
+  }
 }
 </style>

@@ -1,15 +1,32 @@
 <template>
   <nav class="navbar">
-    <router-link class="_link" to="/"><p>Главная</p></router-link>
-    <router-link class="_link" to="/about"><p>Резюме</p></router-link>
-    <router-link class="_link" to="/portfolio"><p>Поcледние работы</p></router-link>
+    <router-link class="_link" to="/">
+      <p v-if="currentWidth > 550">Главная</p>
+      <img v-else src="../assets/svg/home.svg" alt="Home">
+    </router-link>
+    <router-link class="_link" to="/about">
+      <p v-if="currentWidth > 550">Резюме</p>
+      <img v-else src="../assets/svg/about.svg" alt="About">
+    </router-link>
+    <router-link class="_link" to="/portfolio">
+      <p v-if="currentWidth > 550">Поcледние работы</p>
+      <img v-else src="../assets/svg/portfolio.svg" alt="Portfolio">
+    </router-link>
   </nav>
 </template>
 
 <script>
+import { ref, onMounted } from 'vue'
 
 export default {
+  setup () {
+    const currentWidth = ref(0)
+    const updateWidth = () => { currentWidth.value = window.innerWidth }
+    window.addEventListener('resize', updateWidth)
+    onMounted(() => { updateWidth() })
 
+    return { currentWidth }
+  }
 }
 </script>
 
@@ -23,6 +40,18 @@ export default {
   height: 15vh;
   box-sizing: border-box;
   border-bottom: 0.16vh solid black;
+
+  img {
+    height: 2.45vh;
+    width: auto;
+  }
+
+  @media (max-width: $extra-small) {
+    height: 10vh;
+    order: 2;
+    border-bottom: none;
+    border-top: 0.16vh solid black;
+  }
 }
 
 </style>
