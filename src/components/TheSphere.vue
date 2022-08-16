@@ -141,8 +141,8 @@ export default {
   border-radius: $br-rad;
   @include all-cent;
   z-index: 5;
-  width: 50px;
-  height: 50px;
+  width: 8.2vh;
+  height: 8.2vh;
   text-align: center;
   bottom: $space;
   right: $space;
@@ -150,7 +150,7 @@ export default {
   &__info {
     display: flex;
     padding: $mSpace;
-    max-width: 135px;
+    max-width: 22vh;
     margin: $space $mSpace;
     text-align: center;
     @include all-cent;
@@ -170,13 +170,13 @@ export default {
     }
 
     &:hover {
-      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 2.45vh 0.8vh rgba(0, 0, 0, 0.2);
       background: $sColor;
     }
   }
 
   img {
-    height: 20px;
+    height: 3.3vh;
     width: auto;
   }
 }

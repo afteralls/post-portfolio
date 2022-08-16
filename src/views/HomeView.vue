@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="home__title">
-      <div class="_column" style="gap: 5px">
+      <div class="_column" style="gap: 0.8vh">
         <h3>Скорее всего,</h3>
         <h1><span class="mark">Я</span> именно тот,<br>кто <span class="mark">вам нужен</span></h1>
       </div>
@@ -78,7 +78,7 @@ export default {
     text-align: center;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 0.5vh;
     transition: $transition;
     gap: $mSpace / 2;
     background-color: $mColor;
@@ -86,12 +86,12 @@ export default {
     font-weight: 600;
 
     &:hover {
-      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 2.45vh 0.8vh rgba(0, 0, 0, 0.2);
       background: $sColor;
     }
 
     img {
-      max-height: 20px;
+      max-height: 3.3vh;
       width: auto;
     }
   }
@@ -107,20 +107,20 @@ export default {
   &__contact {
     border-radius: $br-rad;
     @include all-cent;
-    height: 50px;
+    height: 8.2vh;
     padding: 0 $mSpace;
     text-align: center;
     transition: $transition;
     background-color: $mColor;
 
     &:hover {
-      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 2.45vh 0.8vh rgba(0, 0, 0, 0.2);
       background-color: $sColor !important;
     }
 
     img {
       margin-right: $mSpace / 2;
-      height: 20px;
+      height: 3.3vh;
       width: auto;
     }
   }

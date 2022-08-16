@@ -11,7 +11,7 @@
   color: white;
   text-transform: uppercase;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 0.5vh;
   transition: $transition;
   gap: $mSpace / 2;
   position: relative;
@@ -21,11 +21,11 @@
     position: absolute;
     bottom: 0;
     width: 75%;
-    height: 3px;
+    height: 0.5vh;
     background-color: $mColor;
     transition: 0.15s ease-out;
     opacity: 0;
-    transform: translateY(5px);
+    transform: translateY(0.8vh);
   }
 
   &:hover {
@@ -61,24 +61,3 @@
   gap: $mSpace;
   align-items: center;
 }
-
-// ._btn {
-//   @include all-cent;
-//   gap: $space / 2;
-//   border-radius: $br-rad;
-//   height: 50px;
-//   border: none;
-//   padding: $space;
-//   background-color: $sColor;
-//   font-family: 'Montserrat', sans-serif;
-//   transition: $transition;
-
-//   &:hover {
-//     background-color: $mColor;
-//   }
-
-//   img {
-//     max-height: 20px;
-//     width: auto;
-//   }
-// }

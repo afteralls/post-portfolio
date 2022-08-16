@@ -63,7 +63,6 @@ export default {
   box-sizing: border-box;
 
   &__app {
-    // @include all-cent;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -72,6 +71,7 @@ export default {
     flex-direction: column;
     gap: $mSpace;
     width: 50%;
+    max-width: 1000px;
     padding: $space;
     text-align: center;
     text-transform: uppercase;
@@ -85,8 +85,8 @@ export default {
     position: relative;
 
     img {
-      max-height: 180px;
-      border-radius: 5px;
+      max-height: 29.5vh;
+      border-radius: 0.8vh;
       width: auto;
       transition: $transition;
     }
@@ -94,7 +94,7 @@ export default {
 
   &__app:hover {
     .portfolio__app-images img {
-      max-height: 240px;
+      max-height: 39.3vh;
     }
   }
 }

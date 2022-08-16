@@ -18,7 +18,7 @@
             <h3>Контакты</h3></div>
           <div class="about__desc">
             <p>Местоположение: Казахстан, г. Усть-Каменогорск</p>
-            <div class="about__contacts" style="gap: 10px;">
+            <div class="about__contacts" style="gap: 1.63vh;">
               <div class="about__contact" style="background-color: #ea4335;">
                 <a href="mailto:postapocalypsecore@gmail.com">
                   <img src="../assets/svg/mail.svg"/>
@@ -40,6 +40,7 @@
             </div>
           </div>
         </div>
+        <br/>
         <div class="about__item">
           <div class="about__title"><h3>Образование</h3></div>
           <div class="about__desc">
@@ -104,17 +105,6 @@
           <div class="skill" style="background-color: rgba(207,99,161, 0.2)">
             <img src="../assets/img/sass.webp" alt="Scss"><p>Scss</p>
           </div>
-          <div class="skill" style="background-color: rgba(223,196,66, 0.2)">
-            <img src="../assets/img/babel.webp" alt="Babel"><p>Babel</p>
-          </div>
-          <div class="skill" style="background-color: rgba(4,105,194, 0.2)">
-            <img src="../assets/img/docker.webp" alt="Docker"><p>Docker</p>
-          </div>
-        </div>
-        <div class="about__skills-row">
-          <div class="skill" style="background-color: rgba(51,120,201, 0.2)">
-            <img src="../assets/img/typescript.webp" alt="TypeScript"><p>TypeScript</p>
-          </div>
           <div class="skill" style="background-color: rgba(140,200,75, 0.2)">
             <img src="../assets/svg/node.svg" alt="Node.js"><p>Node.js</p>
           </div>
@@ -131,6 +121,18 @@
           </div>
           <div class="skill" style="background-color: rgba(93,12,201, 0.2)">
             <img src="../assets/img/pwa.webp" alt="PWA"><p>PWA</p>
+          </div>
+        </div>
+        <h3>Также знаком с </h3>
+        <div class="about__skills-row">
+          <div class="skill" style="background-color: rgba(51,120,201, 0.2)">
+            <img src="../assets/img/typescript.webp" alt="TypeScript"><p>TypeScript</p>
+          </div>
+          <div class="skill" style="background-color: rgba(4,105,194, 0.2)">
+            <img src="../assets/img/docker.webp" alt="Docker"><p>Docker</p>
+          </div>
+          <div class="skill" style="background-color: rgba(223,196,66, 0.2)">
+            <img src="../assets/img/babel.webp" alt="Babel"><p>Babel</p>
           </div>
         </div>
       </div>
@@ -191,13 +193,13 @@
     transition: $transition;
 
     &:hover {
-      box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 0 2.45vh 0.8vh rgba(0, 0, 0, 0.2);
       background-color: $sColor !important;
     }
 
     img {
       margin-right: $mSpace / 2;
-      height: 20px;
+      height: 3.3vh;
       width: auto;
     }
   }
@@ -227,7 +229,7 @@
 
   &__desc {
     display: flex;
-    gap: 5px;
+    gap: 0.8vh;
     width: 60%;
     justify-content: flex-start;
     flex-direction: column;
@@ -238,19 +240,19 @@
   border-radius: $br-rad / 2;
   @include all-cent;
   flex-direction: column;
-  gap: 5px;
-  width: 100px;
-  height: 80px;
+  gap: 0.8vh;
+  width: 16.3vh;
+  height: 13.1vh;
   text-align: center;
   transition: $transition;
 
   &:hover {
-    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 2.45vh 0.8vh rgba(0, 0, 0, 0.2);
     background: $sColor !important;
   }
 
   img {
-    height: 35px;
+    height: 5.7vh;
     width: auto;
   }
 }

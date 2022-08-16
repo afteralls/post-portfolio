@@ -22,7 +22,7 @@ export default {
   gap: $space;
   height: 15vh;
   box-sizing: border-box;
-  border-bottom: 1px solid black;
+  border-bottom: 0.16vh solid black;
 }
 
 </style>
