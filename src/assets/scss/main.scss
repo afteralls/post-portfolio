@@ -48,6 +48,12 @@
   &-active::after {
     opacity: 0;
   }
+
+  @media (max-width: $extra-small) {
+    &::after {
+      display: none;
+    }
+  }
 }
 
 ._column {
