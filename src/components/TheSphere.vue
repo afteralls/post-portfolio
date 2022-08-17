@@ -1,5 +1,5 @@
 <template>
-  <section class="animation-wrapper">
+  <div class="animation-wrapper">
     <div class="sourse"><img src="../assets/svg/info.svg"/></div>
     <div class="sphere-animation">
       <svg class="sphere" viewBox="0 0 440 440" stroke="rgba(80,80,80,.35)">
@@ -35,7 +35,7 @@
         <path d="M109.698 109.332c-24.408 24.407-51.12 37.268-59.663 28.726-8.542-8.543 4.319-35.255 28.727-59.662 24.407-24.408 51.12-37.27 59.662-28.727 8.543 8.543-4.319 35.255-28.726 59.663z"/>
       </svg>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

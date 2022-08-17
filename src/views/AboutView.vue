@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div>
     <div class="main-img"><img src="../assets/img/main-bg.png" alt="Me"></div>
     <div class="about">
       <div class="about__info">
@@ -132,7 +132,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

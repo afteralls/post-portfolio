@@ -1,5 +1,5 @@
 <template>
-  <section class="home">
+  <div class="home">
     <div class="home__title">
       <div class="_column" style="gap: 0.8vh">
         <h3>Скорее всего,</h3>
@@ -32,7 +32,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

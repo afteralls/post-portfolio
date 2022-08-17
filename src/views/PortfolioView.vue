@@ -1,5 +1,5 @@
 <template>
-  <section class="portfolio">
+  <div class="portfolio">
     <div @mouseenter="genSec" @mouseleave="def" id="generator" class="portfolio__app">
       <div class="portfolio__app-images">
         <img src="../assets/img/bg.webp" alt="Barcode Generator">
@@ -36,7 +36,7 @@
         </a>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
