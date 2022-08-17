@@ -1,12 +1,12 @@
 <template>
-  <div class="portfolio">
+  <section class="portfolio">
     <div @mouseenter="genSec" @mouseleave="def" id="generator" class="portfolio__app">
       <div class="portfolio__app-images">
         <img src="../assets/img/bg.webp" alt="Barcode Generator">
         <img src="../assets/img/bg-mob.webp" alt="Barcode Generator">
       </div>
       <h1>Генератор штрих-кодов</h1>
-      <p>Приложение для генерации большого количества штрих-кодов в различных форматах с возможностью экспорта в PNG, JPG или SVG и рашриренными настройками для кастомизации внешнего вида</p>
+      <p>Приложение для генерации большого количества штрих-кодов в различных форматах с возможностью экспорта в PNG, JPG или SVG и расширенными настройками для кастомизации внешнего вида</p>
       <div class="_row">
         <a class="home__link" href="https://github.com/post-apocalypse/barcode-gen-app">
           <img src="../assets/svg/github.svg"/>
@@ -24,7 +24,7 @@
         <img src="../assets/img/fm-mob.webp" alt="Barcode Generator">
       </div>
       <h1>Fast Gallery</h1>
-      <p>Геререя для быстрой загрузки и комфортного просмотра изображений с системой авторизации, сжатием фотографий и умным поиском по тегам. В качестве сервера выступил Firebase</p>
+      <p>Галерея для быстрой загрузки и комфортного просмотра изображений с системой авторизации, сжатием фотографий и умным поиском по тегам. В качестве сервера выступил Firebase</p>
       <div class="_row">
         <a class="home__link" href="https://github.com/post-apocalypse/gallery">
           <img src="../assets/svg/github.svg"/>
@@ -36,7 +36,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -130,6 +130,10 @@ export default {
         width: auto;
       }
     }
+
+    @media (min-height: $large-w) and (max-width: 1000px) {
+      font-size: 0.7em;
+    }
   }
 
   &__app-images {
@@ -177,7 +181,7 @@ export default {
 
   &__app:hover {
     .portfolio__app-images img {
-      max-height: 39.3vh;
+      max-height: 38.3vh;
     }
 
     @media (max-width: $medium) {

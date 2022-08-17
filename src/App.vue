@@ -12,12 +12,7 @@
 <script>
 import TheNavbar from './components/TheNavbar'
 
-export default {
-  components: { TheNavbar },
-  setup () {
-
-  }
-}
+export default { components: { TheNavbar } }
 </script>
 
 <style lang="scss">

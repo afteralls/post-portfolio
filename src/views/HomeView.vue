@@ -1,11 +1,11 @@
 <template>
-  <div class="home">
+  <section class="home">
     <div class="home__title">
       <div class="_column" style="gap: 0.8vh">
         <h3>Скорее всего,</h3>
-        <h1><span class="mark">Я</span> именно тот,<br>кто <span class="mark">вам нужен</span></h1>
+        <h1><span class="mark">Я</span>именно тот,<br>кто<span class="mark">вам нужен</span></h1>
       </div>
-      <p>Frontend-разработчик, главной целью которого является создание качественных, детально проработанных веб-приложений и интерфейсов с использоваием современных технологий и подходов</p>
+      <p>Frontend-разработчик, целью которого является создание качественных, детально проработанных веб-приложений и интерфейсов с использоваием современных технологий и подходов</p>
       <router-link class="home__link" to="/about">
         <p>Подробнее</p>
         <img src="../assets/svg/arrow-right.svg"/>
@@ -32,7 +32,7 @@
         </a>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -70,6 +70,14 @@ export default {
     order: 1;
   }
 
+  @media (min-height: $large-w) and (max-width: 1000px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.7em;
+  }
+
   &__title {
     z-index: 5;
     max-width: 60%;
@@ -92,6 +100,20 @@ export default {
       }
     }
 
+    @media (min-height: $large-w) {
+      h1 {
+        font-size: 3.5em;
+      }
+      font-size: 0.9em;
+    }
+
+    @media (min-height: $large-w) and (max-width: 1500px) {
+      h1 {
+        font-size: 3em;
+      }
+      font-size: 0.8em;
+    }
+
     @media (max-width: $extra-medium) {
       h1 {
         font-size: 3em;
@@ -112,6 +134,13 @@ export default {
       p {
         font-size: 0.7em;
       }
+    }
+
+    @media (min-height: $large-w) and (max-width: 1000px) {
+      align-items: center;
+      margin-top: $mSpace;
+      justify-content: center;
+      text-align: center;
     }
   }
 
@@ -147,6 +176,10 @@ export default {
     left: $space;
     gap: $mSpace;
 
+    @media (min-height: $large-w) and (max-width: 1000px) {
+      display: none;
+    }
+
     @media (max-width: $small) {
       display: none;
     }
@@ -177,5 +210,4 @@ export default {
 .mark {
   color: $mColor;
 }
-
 </style>

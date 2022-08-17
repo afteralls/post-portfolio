@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <section>
     <div class="main-img"><img src="../assets/img/main-bg.png" alt="Me"></div>
     <div class="about">
       <div class="about__info">
@@ -62,7 +62,7 @@
             <h3>Личные навыки</h3></div>
           <div class="about__desc">
             <div style="display: flex; align-items: center; flex-wrap: wrap;">
-              <p>Внимательность к деталям; Креативность; Ответсвенность; Умение слушать и чётко излагать свои мысли; Честность</p>
+              <p>Внимательность к деталям; Креативность; Ответственность; Умение слушать и чётко излагать свои мысли; Честность</p>
             </div>
           </div>
         </div>
@@ -132,7 +132,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -177,6 +177,10 @@ export default {
   height: 85vh;
   gap: $space;
   box-sizing: border-box;
+
+  @media (min-height: $large-w) {
+    font-size: 0.85em;
+  }
 
   @media (max-width: $medium) {
     font-size: 0.75em;

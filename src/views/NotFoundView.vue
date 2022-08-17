@@ -1,5 +1,5 @@
 <template>
-  <div class="not-found">
+  <section class="not-found">
     <div class="home__title" style="text-align: center; align-items: center;">
       <div class="_column" style="gap: 0.8vh;">
         <h1>Кажется, вы забрели куда-то не туда...</h1>
@@ -9,7 +9,7 @@
         <img src="../assets/svg/arrow-right.svg"/>
       </router-link>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss">
