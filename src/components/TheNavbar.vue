@@ -1,15 +1,15 @@
 <template>
   <nav class="navbar">
     <router-link class="_link" to="/">
-      <p v-if="currentWidth > 550">Главная</p>
+      <p v-if="currentWidth > 550">Home</p>
       <img v-else src="../assets/svg/home.svg" alt="Home">
     </router-link>
     <router-link class="_link" to="/about">
-      <p v-if="currentWidth > 550">Резюме</p>
+      <p v-if="currentWidth > 550">Resume</p>
       <img v-else src="../assets/svg/about.svg" alt="About">
     </router-link>
     <router-link class="_link" to="/portfolio">
-      <p v-if="currentWidth > 550">Поcледние работы</p>
+      <p v-if="currentWidth > 550">Recent projects</p>
       <img v-else src="../assets/svg/portfolio.svg" alt="Portfolio">
     </router-link>
   </nav>

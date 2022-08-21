@@ -2,12 +2,12 @@
   <div class="home">
     <div class="home__title">
       <div class="_column" style="gap: 0.8vh">
-        <h3>Скорее всего,</h3>
-        <h1><span class="mark">Я</span>именно тот,<br>кто<span class="mark">вам нужен</span></h1>
+        <h3>MOST LIKELY,</h3>
+        <h1><span class="mark">I'M </span>EXACTLY THE<br><span class="mark">ONE YOU NEED</span></h1>
       </div>
-      <p>Frontend-разработчик, целью которого является создание качественных, детально проработанных веб-приложений и интерфейсов с использоваием современных технологий и подходов</p>
+      <p>Front-end developer whose goal is to create high-quality, detailed web applications and interfaces using modern technologies and approaches</p>
       <router-link class="home__link" to="/about">
-        <p>Подробнее</p>
+        <p>More</p>
         <img src="../assets/svg/arrow-right.svg"/>
       </router-link>
     </div>
@@ -16,19 +16,19 @@
       <div class="home__contact">
         <a href="mailto:postapocalypsecore@gmail.com">
           <img src="../assets/svg/mail.svg"/>
-          <p>Email</p>
+          <p v-if="currentWidth > 1200">Email</p>
         </a>
       </div>
       <div class="home__contact">
         <a href="https://t.me/apocalypsecore">
           <img src="../assets/svg/telegram.svg"/>
-          <p>Telegram</p>
+          <p v-if="currentWidth > 1200">Telegram</p>
         </a>
       </div>
       <div class="home__contact">
         <a href="https://github.com/post-apocalypse">
           <img src="../assets/svg/github.svg"/>
-          <p>GitHub</p>
+          <p v-if="currentWidth > 1200">GitHub</p>
         </a>
       </div>
     </div>
@@ -89,7 +89,7 @@ export default {
     align-items: flex-end;
 
     h1 {
-      font-size: 5em;
+      font-size: 4.4em;
       font-weight: 900;
       line-height: 0.9;
     }
@@ -104,7 +104,7 @@ export default {
       h1 {
         font-size: 3.5em;
       }
-      font-size: 0.9em;
+      font-size: 0.8em;
     }
 
     @media (min-height: $large-w) and (max-width: 1500px) {
@@ -194,13 +194,17 @@ export default {
     transition: $transition;
     background-color: $mColor;
 
+    a {
+      @include all-cent;
+      gap: $space / 2;
+    }
+
     &:hover {
       box-shadow: 0 0 2.45vh 0.8vh rgba(0, 0, 0, 0.2);
       background-color: $sColor !important;
     }
 
     img {
-      margin-right: $mSpace / 2;
       height: 3.3vh;
       width: auto;
     }

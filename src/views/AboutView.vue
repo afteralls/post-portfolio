@@ -4,20 +4,20 @@
     <div class="about">
       <div class="about__info">
         <div class="about__item">
-          <div class="about__title"><h3>Личные данные</h3></div>
-          <div class="about__desc"><p>Меня зовут Даниил Сухарников, мне 20 лет</p></div>
+          <div class="about__title"><h3>Personal details</h3></div>
+          <div class="about__desc"><p>My name is Daniil Sukharnikov, I'm 20 years old</p></div>
         </div>
         <div class="about__item">
-          <div class="about__title"><h3>Цель</h3></div>
+          <div class="about__title"><h3>Objective</h3></div>
           <div class="about__desc">
-            <p>В данный момент претендую на позицию Junior Frontend-разработчика</p>
+            <p>Currently applying for the position of Junior Frontend Developer</p>
           </div>
         </div>
         <div class="about__item">
           <div class="about__title">
-            <h3>Контакты</h3></div>
+            <h3>Contacts</h3></div>
           <div class="about__desc">
-            <p>Местоположение: Казахстан, г. Усть-Каменогорск</p>
+            <p>Location: Kazakhstan, Ust’-Kamenogorsk</p>
             <div class="about__contacts" style="gap: 1.63vh;">
               <div class="about__contact" style="background-color: #ea4335;">
                 <a href="mailto:postapocalypsecore@gmail.com">
@@ -42,41 +42,41 @@
         </div>
         <div v-if="currentWidth > 550"></div>
         <div class="about__item">
-          <div class="about__title"><h3>Образование</h3></div>
+          <div class="about__title"><h3>Education</h3></div>
           <div class="about__desc">
-            <p>НАО "ВКТУ им. Д. Серикбаева", 2019 — 2023 гг.</p>
-            <p>Факультет Информационных технологий и интеллектуальных систем</p>
-            <p>Специальность: Вычислительная техника и программное обеспечение</p>
+            <p>D. Serikbayev East Kazakhstan technical university (EKTU), 2019 — 2023</p>
+            <p>Faculty of Information Technology and Intelligent Systems</p>
+            <p>Specialty: Computer Engineering and Software</p>
           </div>
         </div>
         <div class="about__item">
           <div class="about__title">
-            <h3>Языки</h3></div>
+            <h3>Knowledge</h3><h3>Of Languages</h3></div>
           <div class="about__desc">
-            <p>English — Intermediate (без проблем читаю техническую документацию, разговорный в процессе улучшения)</p>
+            <p>English — Intermediate (I read technical documentation without problems, speaking in the process of improvement)</p>
           </div>
         </div>
         <div v-if="currentWidth > 550"></div>
         <div class="about__item">
           <div class="about__title">
-            <h3>Личные навыки</h3></div>
+            <h3>Soft Skills</h3></div>
           <div class="about__desc">
             <div style="display: flex; align-items: center; flex-wrap: wrap;">
-              <p>Внимательность к деталям; Креативность; Ответственность; Умение слушать и чётко излагать свои мысли; Честность</p>
+              <p>Care for details; Creativity; Responsibility; Ability to listen and clearly express my thoughts; Honesty</p>
             </div>
           </div>
         </div>
         <div class="about__item">
           <div class="about__title">
-            <h3>Дополнительная</h3><h3>информация</h3></div>
+            <h3>Additional</h3><h3>Information</h3></div>
           <div class="about__desc">
-            <p>Перфекционист, насколько это возможно. На 90% состою из любви к музыке и искусству в целом, придерживаюсь философии стоицизма, код личности — ISTJ (вместо тысячи слов)</p>
-            <p v-if="currentWidth > 550">Стоит уточнить, что в данный момент я являюсь студентом 4-го курса, и единственное, о чём я могу сказать с уверенностью: эта данность никак не повлияет на уделяемое мною работе время, но потребует несколько небольших правок в рабочий график, надеюсь на понимание</p>
+            <p>Perfectionist as possible. I am 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)</p>
+            <p v-if="currentWidth > 550">It is worth clarifying: I am a 4th year student, and the only thing I can say with confidence is that this fact will not affect the time I devote to work in any way, but it will require a few small edits to the work schedule, I hope for comprehension</p>
           </div>
         </div>
       </div>
       <div class="about__skills">
-        <h3>Профессиональные навыки</h3>
+        <h3>Hard Skills</h3>
         <div class="about__skills-row">
           <div class="skill" style="background-color: rgba(233,81,0, 0.2)">
             <img src="../assets/img/html.webp" alt="HTML"><p>HTML</p>

@@ -115,7 +115,7 @@ export default {
       sphereAnimation()
 
       tippy('.sourse', {
-        content: '<div class="sourse__info">Автор оригинального дизайна сферы:<a href="https://twitter.com/juliangarnier" class="sourse__link">@JulianGarnier</a></div>',
+        content: '<div class="sourse__info">Author of the original sphere design:<a href="https://twitter.com/juliangarnier" class="sourse__link">@JulianGarnier</a></div>',
         arrow: false,
         allowHTML: true,
         interactive: true,

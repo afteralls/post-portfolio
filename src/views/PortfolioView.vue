@@ -5,15 +5,15 @@
         <img src="../assets/img/bg.webp" alt="Barcode Generator">
         <img src="../assets/img/bg-mob.webp" alt="Barcode Generator">
       </div>
-      <h1>Генератор штрих-кодов</h1>
-      <p>Приложение для генерации большого количества штрих-кодов в различных форматах с возможностью экспорта в PNG, JPG или SVG и расширенными настройками для кастомизации внешнего вида</p>
+      <h1>Barcode Generator</h1>
+      <p>App for generating barcodes in various formats with the possibility of exporting to PNG, JPG or SVG and advanced settings for customizing the appearance</p>
       <div class="_row">
         <a class="home__link" href="https://github.com/post-apocalypse/barcode-gen-app">
           <img src="../assets/svg/github.svg"/>
-          <p>Подробнее</p>
+          <p>More</p>
         </a>
         <a class="home__link" href="https://barcodegen.web.app/">
-          <p>Приложение</p>
+          <p>App</p>
           <img src="../assets/svg/arrow-right.svg"/>
         </a>
       </div>
@@ -24,14 +24,14 @@
         <img src="../assets/img/fm-mob.webp" alt="Barcode Generator">
       </div>
       <h1>Fast Gallery</h1>
-      <p>Галерея для быстрой загрузки и комфортного просмотра изображений с системой авторизации, сжатием фотографий и умным поиском по тегам. В качестве сервера выступил Firebase</p>
+      <p>Gallery for fast loading and comfortable viewing of images with an authorization system, photo compression and smart tag search. Firebase acted as a server</p>
       <div class="_row">
         <a class="home__link" href="https://github.com/post-apocalypse/gallery">
           <img src="../assets/svg/github.svg"/>
-          <p>Подробнее</p>
+          <p>More</p>
         </a>
         <a class="home__link" href="https://fastgallery.web.app/">
-          <p>Приложение</p>
+          <p>App</p>
           <img src="../assets/svg/arrow-right.svg"/>
         </a>
       </div>
@@ -130,10 +130,6 @@ export default {
         width: auto;
       }
     }
-
-    @media (min-height: $large-w) and (max-width: 1000px) {
-      font-size: 0.7em;
-    }
   }
 
   &__app-images {
@@ -144,7 +140,7 @@ export default {
     position: relative;
 
     img {
-      max-height: 29.5vh;
+      max-height: 28.5vh;
       border-radius: 0.8vh;
       width: auto;
       transition: $transition;
@@ -152,7 +148,7 @@ export default {
 
     @media (max-width: $medium) {
       img {
-        max-height: 25vh;
+        max-height: 22vh;
         width: auto;
       }
     }
@@ -181,24 +177,24 @@ export default {
 
   &__app:hover {
     .portfolio__app-images img {
-      max-height: 38.3vh;
+      max-height: 29.3vh;
     }
 
     @media (max-width: $medium) {
       .portfolio__app-images img {
-        max-height: 30vh;
+        max-height: 25vh;
       }
     }
 
     @media (max-width: $extra-medium) {
       .portfolio__app-images img {
-        max-height: 22vh;
+        max-height: 21vh;
       }
     }
 
     @media (max-width: $small) {
       .portfolio__app-images img {
-        max-height: 18vh;
+        max-height: 17vh;
       }
     }
 

@@ -6,22 +6,22 @@ import PortfolioView from '../views/PortfolioView'
 const routes = [
   {
     path: '/',
-    name: 'Главная',
+    name: 'Home',
     component: HomeView
   },
   {
     path: '/about',
-    name: 'Резюме',
+    name: 'Resume',
     component: AboutView
   },
   {
     path: '/portfolio',
-    name: 'Последние работы',
+    name: 'Recent projects',
     component: PortfolioView
   },
   {
     path: '/:notFound(.*)',
-    name: 'Уп-с... Кажется, вы потерялись',
+    name: "Looks like you've wandered off somewhere...",
     component: () => import('../views/NotFoundView')
   }
 ]
