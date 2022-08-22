@@ -82,6 +82,26 @@ export default {
     }
   }
 
+  @media (min-height: $large-w) and (max-width: 1400px) {
+    height: calc(90vh - $space);
+    width: calc(100% - $space);
+    justify-content: center;
+    font-size: 0.5em;
+    gap: $mSpace;
+    flex-direction: column;
+    margin: $mSpace;
+
+    & .home__link {
+      padding: $mSpace / 2;
+      letter-spacing: 0;
+
+      img {
+        height: 2.45vh;
+        width: auto;
+      }
+    }
+  }
+
   &__app {
     display: flex;
     justify-content: flex-end;
@@ -97,6 +117,11 @@ export default {
     text-transform: uppercase;
 
     @media (max-width: $medium) {
+      font-size: 0.7em;
+      justify-content: center;
+    }
+
+    @media (min-height: 750px) and (max-width: 1400px) {
       font-size: 0.7em;
       justify-content: center;
     }
@@ -118,6 +143,20 @@ export default {
     }
 
     @media (max-width: $extra-small) {
+      width: 100%;
+
+      & ._row {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+
+      & .home__link {
+        width: auto;
+      }
+    }
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
       width: 100%;
 
       & ._row {
@@ -153,6 +192,13 @@ export default {
       }
     }
 
+    @media (min-height: 750px) and (max-width: 1400px) {
+      img {
+        max-height: 22vh;
+        width: auto;
+      }
+    }
+
     @media (max-width: $extra-medium) {
       img {
         max-height: 18vh;
@@ -173,11 +219,24 @@ export default {
         width: auto;
       }
     }
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      img {
+        max-height: 13vh;
+        width: auto;
+      }
+    }
   }
 
   &__app:hover {
     .portfolio__app-images img {
       max-height: 29.3vh;
+    }
+
+    @media (min-height: 750px) and (max-width: 1400px) {
+      .portfolio__app-images img {
+        max-height: 25vh;
+      }
     }
 
     @media (max-width: $medium) {
@@ -199,6 +258,12 @@ export default {
     }
 
     @media (max-width: $extra-small) {
+      .portfolio__app-images img {
+        max-height: 15vh;
+      }
+    }
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
       .portfolio__app-images img {
         max-height: 15vh;
       }

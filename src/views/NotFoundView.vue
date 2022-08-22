@@ -19,6 +19,7 @@
   height: 85vh;
   width: 100vw;
   @include all-cent;
+  font-size: 0.9em;
 
   @media (max-width: $extra-medium) {
     height: 90vh;

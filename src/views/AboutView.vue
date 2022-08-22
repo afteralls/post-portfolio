@@ -166,6 +166,10 @@ export default {
   @media (max-width: $extra-medium) {
     display: none;
   }
+
+  @media (min-height: $large-w) and (max-width: 1200px) {
+    display: none;
+  }
 }
 
 .about {
@@ -178,8 +182,19 @@ export default {
   gap: $space;
   box-sizing: border-box;
 
-  @media (min-height: $large-w) {
-    font-size: 0.85em;
+  @media (min-height: $large-w) and (max-width: 1400px) {
+    gap: $mSpace / 2;
+    flex-direction: column;
+    font-size: 0.55em !important;
+
+    h3 {
+      font-size: 0.9em;
+    }
+  }
+
+  @media (min-height: 750px) and (max-width: 1400px) {
+    font-size: 0.75em;
+    padding: 0 $mSpace;
   }
 
   @media (max-width: $medium) {
@@ -211,6 +226,11 @@ export default {
     gap: $mSpace / 2;
     padding: $mSpace 0;
 
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      padding: 0;
+      gap: 0.8vh;
+    }
+
     @media (max-width: $extra-small) {
       padding: 0;
       gap: 0.8vh;
@@ -219,6 +239,10 @@ export default {
 
   &__info {
     width: 73%;
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      width: 100%;
+    }
 
     @media (max-width: $extra-small) {
       width: 100%;
@@ -229,6 +253,10 @@ export default {
     width: 28%;
     min-width: 30%;
     position: relative;
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      width: 100% !important;
+    }
 
     @media (max-width: $extra-medium) {
       width: 35%;
@@ -245,6 +273,12 @@ export default {
     max-width: 57vh;
     flex-wrap: wrap;
     gap: $mSpace / 2;
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      max-width: 100% !important;
+      align-items: center;
+      justify-content: center;
+    }
 
     @media (max-width: $extra-medium) {
       max-width: 40vh;
@@ -264,10 +298,14 @@ export default {
 
   &__contact {
     border-radius: $br-rad / 2;
-    @include all-cent;
     padding: $mSpace / 2;
     text-align: center;
     transition: $transition;
+
+    a {
+      @include all-cent;
+      gap: $mSpace / 2;
+    }
 
     &:hover {
       box-shadow: 0 0 2.45vh 0.8vh rgba(0, 0, 0, 0.2);
@@ -275,12 +313,21 @@ export default {
     }
 
     img {
-      margin-right: $mSpace / 2;
       height: 3.3vh;
       width: auto;
     }
 
     @media (max-width: $extra-small) {
+      padding: 0.8vh;
+
+      img {
+        margin-right: 0;
+        height: 2.5vh;
+        width: auto;
+      }
+    }
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
       padding: 0.8vh;
 
       img {
@@ -302,6 +349,10 @@ export default {
     @media (max-width: $extra-small) {
       gap: $mSpace / 2;
     }
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      gap: $mSpace / 2;
+    }
   }
 
   &__title {
@@ -311,6 +362,11 @@ export default {
     justify-content: flex-start;
     flex-direction: column;
     height: 100%;
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      width: 29%;
+      min-width: 29%;
+    }
 
     @media (max-width: $extra-medium) {
       width: 29%;
@@ -324,6 +380,10 @@ export default {
     width: 60%;
     justify-content: flex-start;
     flex-direction: column;
+
+    @media (min-height: $large-w) and (max-width: 1400px) {
+      width: 100%;
+    }
 
     @media (max-width: $extra-medium) {
       width: 100%;
@@ -351,6 +411,16 @@ export default {
     width: auto;
   }
 
+  @media (min-height: 750px) and (max-width: 1400px) {
+    width: 11.5vh;
+    height: 10.5vh;
+
+    img {
+      height: 5vh;
+      width: auto;
+    }
+  }
+
   @media (max-width: $medium) {
     width: 13.5vh;
     height: 10.5vh;
@@ -374,6 +444,17 @@ export default {
   @media (max-width: $extra-small) {
     width: 6.7vh;
     height: 6.7vh;
+
+    img {
+      height: 2.5vh;
+      width: auto;
+    }
+  }
+
+  @media (min-height: $large-w) and (max-width: 1400px) {
+    width: 6.7vh;
+    height: 6.7vh;
+    font-size: 0.7em;
 
     img {
       height: 2.5vh;
