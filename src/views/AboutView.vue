@@ -70,7 +70,7 @@
           <div class="about__title">
             <h3>Additional</h3><h3>Information</h3></div>
           <div class="about__desc">
-            <p>Perfectionist as possible. I am 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)</p>
+            <p>Perfectionist as possible. I'm 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)</p>
             <p v-if="currentWidth > 550">It is worth clarifying: I am a 4th year student, and the only thing I can say with confidence is that this fact will not affect the time I devote to work in any way, but it will require a few small edits to the work schedule, I hope for comprehension</p>
           </div>
         </div>
