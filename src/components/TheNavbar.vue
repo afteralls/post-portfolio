@@ -53,7 +53,8 @@ export default {
     border-top: 0.16vh solid black;
   }
 
-  @media (min-height: $large-w) and (max-width: 1000px) {
+  @media (min-height: $large-w) and (max-width: 1400px) {
+    height: 10vh;
     font-size: 0.45em;
     gap: $mSpace;
   }
