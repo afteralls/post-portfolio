@@ -1,14 +1,14 @@
 <template>
-<TheNavbar />
-<AppBackground class="app-background _full-fixed" />
-<div class="app-wrapper _full-fixed"></div>
-<div class="_container">
-  <RouterView v-slot="{ Component }">
-    <Transition name="main" mode="out-in">
-      <component :is="Component" />
-    </Transition>
-  </RouterView>
-</div>
+  <TheNavbar />
+  <AppBackground class="app-background _full-fixed" />
+  <div class="app-wrapper _full-fixed"></div>
+  <div class="_container">
+    <RouterView v-slot="{ Component }">
+      <Transition name="main" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </RouterView>
+  </div>
 </template>
 
 <script setup lang="ts">

@@ -7,6 +7,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AboutInfo: typeof import('./../src/components/AboutView/AboutInfo.vue')['default']
     AccountIcon: typeof import('./../src/assets/svg/AccountIcon.vue')['default']
     AddFolderIcon: typeof import('./../src/assets/svg/AddFolderIcon.vue')['default']
     AddIcon: typeof import('./../src/assets/svg/AddIcon.vue')['default']
@@ -32,8 +33,11 @@ declare module '@vue/runtime-core' {
     HashtagIcon: typeof import('./../src/assets/svg/HashtagIcon.vue')['default']
     HeartIcon: typeof import('./../src/assets/svg/HeartIcon.vue')['default']
     HomeIcon: typeof import('./../src/assets/svg/HomeIcon.vue')['default']
+    HomeInfo: typeof import('./../src/components/HomeView/HomeInfo.vue')['default']
+    HTMLIcon: typeof import('./../src/assets/svg/Skills/HTMLIcon.vue')['default']
+    InfoBlock: typeof import('./../src/components/AboutView/InfoBlock.vue')['default']
     InfoIcon: typeof import('./../src/assets/svg/InfoIcon.vue')['default']
-    InfoSection: typeof import('./../src/components/HomeView/InfoSection.vue')['default']
+    InfoSection: typeof import('./../src/components/AboutView/InfoSection.vue')['default']
     LoadingIcon: typeof import('./../src/assets/svg/LoadingIcon.vue')['default']
     LocalIcon: typeof import('./../src/assets/svg/LocalIcon.vue')['default']
     LogoIcon: typeof import('./../src/assets/svg/LogoIcon.vue')['default']
@@ -51,6 +55,8 @@ declare module '@vue/runtime-core' {
     RouterView: typeof import('vue-router')['RouterView']
     SearchIcon: typeof import('./../src/assets/svg/SearchIcon.vue')['default']
     ShareIcon: typeof import('./../src/assets/svg/ShareIcon.vue')['default']
+    Skill: typeof import('./../src/components/AboutView/Skill.vue')['default']
+    SkillsSection: typeof import('./../src/components/AboutView/SkillsSection.vue')['default']
     SortIcon: typeof import('./../src/assets/svg/SortIcon.vue')['default']
     TelegramIcon: typeof import('./../src/assets/svg/TelegramIcon.vue')['default']
     TheNavbar: typeof import('./../src/components/Navbar/TheNavbar.vue')['default']

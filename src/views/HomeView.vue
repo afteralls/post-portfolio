@@ -1,10 +1,10 @@
 <template>
-  <div class="_wrapper">
-    <div class="home _row">
-      <InfoSection />
-      <TheSphere />
-    </div>
+<div class="_wrapper">
+  <div class="home _row">
+    <HomeInfo />
+    <TheSphere />
   </div>
+</div>
 </template>
 
 <style scoped lang="scss">

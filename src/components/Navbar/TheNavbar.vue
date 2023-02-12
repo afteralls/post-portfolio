@@ -3,18 +3,9 @@
   <div class="_container">
     <div class="nav">
       <nav class="_row">
-        <RouterLink class="link _i" to="/">
-          <HomeIcon class="mob-only" />
-          <small class="pc-only">Главная</small>
-        </RouterLink>
-        <RouterLink class="link _i" to="/about">
-          <div class="mob-only"><PersonIcon /></div>
-          <small class="pc-only">Резюме</small>
-        </RouterLink>
-        <RouterLink class="link _i" to="/portfolio">
-          <div class="mob-only"><PortfolioIcon /></div>
-          <small class="pc-only">Последние работы</small>
-        </RouterLink>
+        <RouterLink class="link _i" to="/"><HomeIcon /></RouterLink>
+        <RouterLink class="link _i" to="/about"><PersonIcon /></RouterLink>
+        <RouterLink class="link _i" to="/portfolio"><PortfolioIcon /></RouterLink>
       </nav>
       <div v-if="width > 920" class="_row">
         <NavThemeSwitcher />
@@ -73,22 +64,5 @@ onMounted(() => document.documentElement.lang = curLang)
   border-bottom: 2px solid transparent;
 }
 
-.pc-only {
-  @media (max-width: 600px) {
-    display: none;
-  }
-}
-
-.mob-only {
-  display: flex;
-  align-items: center;
-
-  @media (min-width: 600px) {
-    display: none;
-  }
-}
-
-.active {
-  border-bottom: 2px solid var(--txt-c);
-}
+.active { border-bottom: 2px solid var(--txt-c); }
 </style>
