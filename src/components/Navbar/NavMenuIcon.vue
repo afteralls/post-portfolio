@@ -15,12 +15,14 @@
   width: 30px;
   display: block;
   z-index: 10;
+  transition: var(--transition);
   transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   cursor: pointer;
 }
 
 .icon-bar {
   position: absolute;
+  transition: var(--transition);
   background-color: var(--txt-c);
   top: 50%;
   right: 6px;

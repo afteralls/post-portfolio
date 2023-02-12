@@ -1,36 +1,36 @@
 <template>
-  <nav ref="navSize" class="nav-wrapper">
-    <div class="_container">
-      <div class="nav">
-        <nav class="_row">
-          <RouterLink class="link" to="/">
-            <small v-if="width > 600">Главная</small>
-            <div v-else class="_i"><HomeIcon /></div>
-          </RouterLink>
-          <RouterLink class="link" to="/about">
-            <small v-if="width > 600">Резюме</small>
-            <div v-else class="_i"><PersonIcon /></div>
-          </RouterLink>
-          <RouterLink class="link" to="/portfolio">
-            <small v-if="width > 600">Последние работы</small>
-            <div v-else class="_i"><PortfolioIcon /></div>
-          </RouterLink>
-        </nav>
-        <div v-if="width > 900" class="_row">
-          <NavThemeSwitcher />
-          <div class="_br"></div>
-          <div class="_i"><TranslateIcon @click="changeLang" /></div>
-          <div class="_br"></div>
-          <NavContacts />
-        </div>
-        <NavMobMenu v-else>
-          <template #theme><NavThemeSwitcher /></template>
-          <template #translation><div class="_i"><TranslateIcon @click="changeLang" /></div></template>
-          <template #contacts><NavContacts /></template>
-        </NavMobMenu>
+<nav ref="navSize" class="nav-wrapper">
+  <div class="_container">
+    <div class="nav">
+      <nav class="_row">
+        <RouterLink class="link" to="/">
+          <HomeIcon class="mob-only" />
+          <small class="pc-only">Главная</small>
+        </RouterLink>
+        <RouterLink class="link" to="/about">
+          <div class="mob-only"><PersonIcon /></div>
+          <small class="pc-only">Резюме</small>
+        </RouterLink>
+        <RouterLink class="link" to="/portfolio">
+          <div class="mob-only"><PortfolioIcon /></div>
+          <small class="pc-only">Последние работы</small>
+        </RouterLink>
+      </nav>
+      <div v-if="width > 900" class="_row">
+        <NavThemeSwitcher />
+        <div class="_br"></div>
+        <div class="_i"><TranslateIcon @click="changeLang" /></div>
+        <div class="_br"></div>
+        <NavContacts />
       </div>
+      <NavMobMenu v-else>
+        <template #theme><NavThemeSwitcher /></template>
+        <template #translation><div class="_i"><TranslateIcon @click="changeLang" /></div></template>
+        <template #contacts><NavContacts /></template>
+      </NavMobMenu>
     </div>
-  </nav>
+  </div>
+</nav>
 </template>
 
 <script setup lang="ts">
@@ -69,19 +69,29 @@ onMounted(() => document.documentElement.lang = curLang)
 
 .link {
   transition: var(--transition);
+  padding-bottom: 3px;
+  border-bottom: 2px solid transparent;
+
+  svg {
+    height: 20px;
+    width: auto;
+  }
 }
 
-.link {
-  padding: calc(var(--space) / 2);
-  border-radius: var(--space);
+.pc-only {
+  @media (max-width: 600px) {
+    display: none;
+  }
+}
+
+.mob-only {
+  @media (min-width: 600px) {
+    display: none;
+  }
 }
 
 .active {
-  transition: var(--transition);
-  color: var(--dark-txt-c);
   fill: var(--dark-txt-c);
-  background-color: var(--accent-c);
-  padding: calc(var(--space) / 2);
-  border-radius: var(--space);
+  border-bottom: 2px solid var(--txt-c);
 }
 </style>

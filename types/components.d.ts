@@ -52,6 +52,7 @@ declare module '@vue/runtime-core' {
     SortIcon: typeof import('./../src/assets/svg/SortIcon.vue')['default']
     TelegramIcon: typeof import('./../src/assets/svg/TelegramIcon.vue')['default']
     TheNavbar: typeof import('./../src/components/Navbar/TheNavbar.vue')['default']
+    TheSphere: typeof import('./../src/components/HomeView/TheSphere.vue')['default']
     TranslateIcon: typeof import('./../src/assets/svg/TranslateIcon.vue')['default']
   }
 }
