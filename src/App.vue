@@ -1,7 +1,7 @@
 <template>
   <TheNavbar />
-  <AppBackground class="app-background _full-fixed" />
-  <div class="app-wrapper _full-fixed"></div>
+  <AppBackground class="app-background full-fixed" />
+  <div class="app-wrapper full-fixed"></div>
   <div class="_container">
     <RouterView v-slot="{ Component }">
       <Transition name="main" mode="out-in">
@@ -25,5 +25,12 @@ router.beforeEach((to, _, next) => { document.title = i18n(to.name as string); n
 }
 
 .app-background { z-index: -2; }
+
+.full-fixed {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+}
 </style>
   

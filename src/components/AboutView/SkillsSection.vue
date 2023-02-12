@@ -1,31 +1,20 @@
 <template>
-  <div class="_column">
+  <div class="skills-wrapper _column">
     <small>Текущий стек технологий</small>
-    <div class="_row">
-      <div class="skill" style="background-color: rgba(233, 81, 0, 0.2)">
-        <HTMLIcon />
-        <h4>HTML</h4>
-      </div>
+    <div class="skills">
+      <HTMLItem /><CSSItem /><SassItem /><TSItem /><VueItem /><PiniaItem /><ViteItem /><VueRouterItem /><PWAItem /><VueUseItem /><Node /><DartItem /><FlutterItem />
     </div>
   </div>
 </template>
 
 <style scoped lang="scss">
-.skill {
+.skills-wrapper {
+  width: 40%;
+}
+
+.skills {
   display: flex;
-  align-items: center;
-  gap: 5px;
-  padding: 10px;
-  transition: var(--transition);
-  border-radius: var(--br-rad);
-
-  svg {
-    // height: 20px;
-    width: auto;
-  }
-
-  &:hover {
-    background-color: var(--accent-c-h) !important;
-  }
+  gap: 10px;
+  flex-wrap: wrap;
 }
 </style>

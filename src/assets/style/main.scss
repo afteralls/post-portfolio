@@ -82,6 +82,24 @@ small {
   }
 }
 
+._skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  transition: var(--transition);
+  border-radius: var(--br-rad);
+
+  svg {
+    height: 24px;
+    width: auto;
+  }
+
+  &:hover {
+    background-color: var(--accent-c-h) !important;
+  }
+}
+
 ._column {
   display: flex;
   flex-direction: column;
@@ -100,10 +118,23 @@ small {
   align-items: center;
 }
 
-._bg-wp {
-  background-color: var(--bg-c);
-  padding: var(--space);
+.skill {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  transition: var(--transition);
   border-radius: var(--br-rad);
+
+  &:hover {
+    background-color: var(--accent-c-h) !important;
+  }
+}
+
+._br {
+  background-color: rgba(128, 128, 128, 0.5);
+  width: 1px;
+  height: 100%;
 }
 
 ._btn {
@@ -124,12 +155,6 @@ small {
   }
 }
 
-._disabled {
-  filter: contrast(0.5);
-  cursor: default;
-  pointer-events: none;
-}
-
 ._i {
   display: flex;
   justify-content: center;
@@ -141,25 +166,4 @@ small {
     width: auto;
     cursor: pointer;
   }
-}
-
-._br {
-  background-color: rgba(128, 128, 128, 0.5);
-  width: 1px;
-  height: 100%;
-}
-
-._full-fixed {
-  position: fixed;
-  top: 0;
-  height: 100vh;
-  width: 100vw;
-}
-
-._absolute {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
 }
