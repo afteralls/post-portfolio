@@ -5,22 +5,29 @@ import PortfolioView from '../views/PortfolioView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
+  scrollBehavior() {
+    return new Promise(resolve => {
+      setTimeout(() => {
+        resolve({ top: 0 })
+      }, 250)
+    })
+  },
   linkActiveClass: 'active',
   linkExactActiveClass: 'active',
   routes: [
     {
       path: '/',
-      name: 'home',
+      name: 'view.home',
       component: HomeView
     },
     {
       path: '/about',
-      name: 'new',
+      name: 'view.about',
       component: AboutView
     },
     {
       path: '/portfolio',
-      name: 'some',
+      name: 'view.portfolio',
       component: PortfolioView
     }
   ]

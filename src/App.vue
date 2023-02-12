@@ -5,9 +5,7 @@
 <div class="_container">
   <RouterView v-slot="{ Component }">
     <Transition name="main" mode="out-in">
-      <div class="wrapper">
-        <component :is="Component" />
-      </div>
+      <component :is="Component" />
     </Transition>
   </RouterView>
 </div>
@@ -27,21 +25,5 @@ router.beforeEach((to, _, next) => { document.title = i18n(to.name as string); n
 }
 
 .app-background { z-index: -2; }
-
-
-.wrapper {
-  margin: 6rem auto 0 auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--space);
-  box-sizing: border-box;
-  gap: calc(var(--space) * 3);
-
-  @media(max-width: 900px) {
-    margin: 3.75rem auto 0 auto;
-  }
-}
 </style>
   

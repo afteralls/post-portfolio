@@ -3,20 +3,20 @@
   <div class="_container">
     <div class="nav">
       <nav class="_row">
-        <RouterLink class="link" to="/">
+        <RouterLink class="link _i" to="/">
           <HomeIcon class="mob-only" />
           <small class="pc-only">Главная</small>
         </RouterLink>
-        <RouterLink class="link" to="/about">
+        <RouterLink class="link _i" to="/about">
           <div class="mob-only"><PersonIcon /></div>
           <small class="pc-only">Резюме</small>
         </RouterLink>
-        <RouterLink class="link" to="/portfolio">
+        <RouterLink class="link _i" to="/portfolio">
           <div class="mob-only"><PortfolioIcon /></div>
           <small class="pc-only">Последние работы</small>
         </RouterLink>
       </nav>
-      <div v-if="width > 900" class="_row">
+      <div v-if="width > 920" class="_row">
         <NavThemeSwitcher />
         <div class="_br"></div>
         <div class="_i"><TranslateIcon @click="changeLang" /></div>
@@ -71,11 +71,6 @@ onMounted(() => document.documentElement.lang = curLang)
   transition: var(--transition);
   padding-bottom: 3px;
   border-bottom: 2px solid transparent;
-
-  svg {
-    height: 20px;
-    width: auto;
-  }
 }
 
 .pc-only {
@@ -85,13 +80,15 @@ onMounted(() => document.documentElement.lang = curLang)
 }
 
 .mob-only {
+  display: flex;
+  align-items: center;
+
   @media (min-width: 600px) {
     display: none;
   }
 }
 
 .active {
-  fill: var(--dark-txt-c);
   border-bottom: 2px solid var(--txt-c);
 }
 </style>

@@ -1,5 +1,5 @@
 @import './base.module.css';
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
 
 /* Global Styles */
 
@@ -20,8 +20,12 @@ body {
   color: var(--txt-c);
   line-height: 1;
 
-  @media (max-width: 900px) {
+  @media (max-width: 920px) {
     font-size: 14px;
+  }
+
+  @media (max-width: 300px) {
+    font-size: 12px;
   }
 }
 
@@ -61,6 +65,21 @@ small {
   width: 100%;
   max-width: 1280px;
   margin: 0 auto;
+}
+
+._wrapper {
+  margin: 6rem auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space);
+  box-sizing: border-box;
+  gap: calc(var(--space) * 2);
+
+  @media(max-width: 920px) {
+    margin: 3.75rem auto 0 auto;
+  }
 }
 
 ._column {

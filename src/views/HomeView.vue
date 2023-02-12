@@ -1,5 +1,19 @@
-<script setup lang="ts"></script>
-
 <template>
-  <TheSphere />
+  <div class="_wrapper">
+    <div class="home _row">
+      <InfoSection />
+      <TheSphere />
+    </div>
+  </div>
 </template>
+
+<style scoped lang="scss">
+.home {
+  width: 100%;
+  justify-content: space-between;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+  }
+}
+</style>
