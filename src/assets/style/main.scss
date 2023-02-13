@@ -138,6 +138,9 @@ small {
 }
 
 ._btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
   text-align: center;
   background-color: var(--accent-c);
   padding: var(--space);
@@ -150,8 +153,30 @@ small {
     color: var(--dark-txt-c);
   }
 
+  svg {
+    fill: var(--dark-txt-c);
+    height: 20px;
+    width: auto;
+  }
+
   &:hover {
     background-color: var(--accent-c-h);
+  }
+
+  @media (max-width: 600px) {
+    svg {
+      height: 14px;
+    }
+  }
+}
+
+._stack {
+  display: flex;
+  gap: 7px;
+  flex-wrap: wrap;
+
+  @media (max-width: 920px) {
+    justify-content: center;
   }
 }
 
