@@ -13,5 +13,9 @@
   display: flex;
   gap: calc(var(--space) * 2);
   align-items: flex-start;
+
+  @media (max-width: 920px) {
+    flex-direction: column;
+  }
 }
 </style>

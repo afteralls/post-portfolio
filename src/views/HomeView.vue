@@ -1,5 +1,5 @@
 <template>
-<div class="_wrapper">
+<div ref="home" class="_wrapper">
   <div class="home _row">
     <HomeInfo />
     <TheSphere />

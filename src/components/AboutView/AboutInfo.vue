@@ -37,9 +37,13 @@
   </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 .info {
   justify-content: flex-start;
   width: 60%;
+
+  @media (max-width: 920px) {
+    width: 100%;
+  }
 }
 </style>

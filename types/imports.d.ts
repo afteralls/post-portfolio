@@ -12,5 +12,6 @@ declare global {
   const useResizeObserver: typeof import('@vueuse/core')['useResizeObserver']
   const useRouter: typeof import('vue-router')['useRouter']
   const useStorage: typeof import('@vueuse/core')['useStorage']
+  const useSwipe: typeof import('@vueuse/core')['useSwipe']
   const watch: typeof import('vue')['watch']
 }

@@ -9,7 +9,7 @@
       <RouterLink to="/about" class="_btn">
         <small>Резюме</small>
       </RouterLink>
-      <RouterLink to="/about" class="_btn">
+      <RouterLink to="/portfolio" class="_btn">
         <small>Последние работы</small>
       </RouterLink>
     </div>

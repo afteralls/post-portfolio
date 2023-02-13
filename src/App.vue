@@ -2,7 +2,7 @@
   <TheNavbar />
   <AppBackground class="app-background full-fixed" />
   <div class="app-wrapper full-fixed"></div>
-  <div class="_container">
+  <div ref="view" class="_container">
     <RouterView v-slot="{ Component }">
       <Transition name="main" mode="out-in">
         <component :is="Component" />
@@ -15,6 +15,21 @@
 const router = useRouter()
 const i18n = inject('func') as LangFunc
 router.beforeEach((to, _, next) => { document.title = i18n(to.name as string); next() })
+
+const view = ref<HTMLElement | null>(null);
+const { direction } = useSwipe(view)
+
+watch(direction, (v) => {
+  const curView: string = router.currentRoute.value.fullPath
+  switch (curView) {
+    case '/': if (v === 'LEFT') router.push('/about'); break
+    case '/about':
+      if (v === 'LEFT') router.push('/portfolio')
+      else if (v === 'RIGHT') router.push('/')
+      break;
+    case '/portfolio': if (v === 'RIGHT') router.push('/about'); break
+  }
+})
 </script>
 
 <style scoped lang="scss">
@@ -33,4 +48,3 @@ router.beforeEach((to, _, next) => { document.title = i18n(to.name as string); n
   width: 100vw;
 }
 </style>
-  
