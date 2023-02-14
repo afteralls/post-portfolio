@@ -3,14 +3,20 @@
   <div class="_container">
     <div class="nav">
       <nav class="_row">
-        <RouterLink class="link _i" to="/"><HomeIcon /></RouterLink>
-        <RouterLink class="link _i" to="/about"><PersonIcon /></RouterLink>
-        <RouterLink class="link _i" to="/portfolio"><PortfolioIcon /></RouterLink>
+        <RouterLink class="link _i" to="/" :title="$i18n('global.homeLink')">
+          <HomeIcon />
+        </RouterLink>
+        <RouterLink class="link _i" to="/about" :title="$i18n('global.aboutLink')">
+          <PersonIcon />
+        </RouterLink>
+        <RouterLink class="link _i" to="/portfolio" :title="$i18n('global.portfolioLink')">
+          <PortfolioIcon />
+        </RouterLink>
       </nav>
       <div v-if="width > 920" class="_row">
         <NavThemeSwitcher />
         <div class="_br"></div>
-        <div class="_i"><TranslateIcon @click="changeLang" /></div>
+        <div class="_i" :title="$i18n('nav.lang')"><TranslateIcon @click="changeLang" /></div>
         <div class="_br"></div>
         <NavContacts />
       </div>

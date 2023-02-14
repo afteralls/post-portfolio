@@ -4,15 +4,15 @@
     <div class="project _row">
       <div class="info _column">
         <h1>Cloud Gallery</h1>
-          <div class="links _row">
-            <a class="_btn" href="https://github.com/post-apocalypse/cloud-gallery">
-              <GitHubIcon />
-              <small>Подробнее</small>
-            </a>
-            <a class="_btn" href="https://cloud-gallery.web.app/">
-              <small>Перейти к приложению</small>
-              <ArrowLink />
-            </a>
+        <div class="links _row">
+          <a class="_btn" href="https://github.com/post-apocalypse/cloud-gallery">
+            <GitHubIcon />
+            <small>Подробнее</small>
+          </a>
+          <a class="_btn" href="https://cloud-gallery.web.app/">
+            <small>Перейти к приложению</small>
+            <ArrowLink />
+          </a>
         </div>
         <small>Стек приложения</small>
         <div class="_stack cg">

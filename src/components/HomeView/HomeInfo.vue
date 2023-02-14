@@ -1,20 +1,20 @@
 <template>
-  <div class="_column headers">
-    <div class="title">
-      <h3>Скорее всего,</h3>
-      <h1><span :class="{ 'mark': !isDark }">Я</span> именно тот,<br>кто <span :class="{ 'mark': !isDark }">вам нужен</span></h1>
-    </div>
-    <h4>Mobile & UI/Frontend-разработчик, главной целью которого является создание качественных, детально проработанных приложений и интерфейсов</h4>
-    <div class="actions _row">
-      <RouterLink to="/about" class="_btn">
-        <small>Резюме</small>
-      </RouterLink>
-      <RouterLink to="/portfolio" class="_btn">
-        <small>Последние работы</small>
-      </RouterLink>
-    </div>
-    <small>... или используйте свайпы для навигации</small>
+<div class="_column headers">
+  <div class="title">
+    <h3>{{ $i18n('home.tlOne') }}</h3>
+    <h1><span :class="{ 'mark': !isDark }">{{ $i18n('home.tlTwo') }}</span>{{ $i18n('home.tlThree') }}<span :class="{ 'mark': !isDark }">{{ $i18n('home.tlFour') }}</span></h1>
   </div>
+  <h4>{{ $i18n('home.subTitle') }}</h4>
+  <div class="actions _row">
+    <RouterLink to="/about" class="_btn">
+      <small>{{ $i18n('global.aboutLink') }}</small>
+    </RouterLink>
+    <RouterLink to="/portfolio" class="_btn">
+      <small>{{ $i18n('global.portfolioLink') }}</small>
+    </RouterLink>
+  </div>
+  <small>{{ $i18n('home.tip') }}</small>
+</div>
 </template>
 
 <script setup lang="ts">
