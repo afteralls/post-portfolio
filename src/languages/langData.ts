@@ -24,6 +24,35 @@ export default {
       tlFour: 'one you need',
       subTitle: 'Mobile & UI/Frontend developer whose main goal is to create high-quality, detailed applications and interfaces',
       tip: '...or use swipe to navigate'
+    },
+    about: {
+      skillsT1: 'The current stack I\'m using',
+      skillsT2: 'I also know and use',
+      t1: 'Personal details',
+      d1: 'My name is Daniil Sukharnikov, I\'m 21 years old',
+      t2: 'Experience',
+      d2: {
+        one: 'I\'ve been a web developer for over 2 years, last of which I use Vue.JS Framework with its entire ecosystem',
+        two: 'I have extensive experience in developing adaptive, cross-browser Single Page Applications of any complexity and structure',
+        three: 'Recently, I\'ve been writing in Dart language, developing mobile applications using Flutter framework'
+      },
+      t3: 'Location',
+      d3: 'Kazakhstan, Ust\'-Kamenogorsk',
+      t4: 'Education',
+      d4: {
+        one: 'D. Serikbayev East Kazakhstan technical university (EKTU), 2019 — 2023',
+        two: 'Faculty of Information Technology and Intelligent Systems',
+        three: 'Specialty: Computer Engineering and Software'
+      },
+      t5: 'Knowledge Of Languages',
+      d5: {
+        one: 'Russian — Native',
+        two: 'English — Intermediate (I read technical documentation without problems, speaking in the process of improvement)',
+      },
+      t6: 'Soft Skills',
+      d6: 'Care for details; Creativity; Responsibility; Ability to listen and clearly express my thoughts; Honesty',
+      t7: 'Additional Information',
+      d7: 'Perfectionist as possible. I\'m 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)',
     }
   },
   ru: {
@@ -51,6 +80,35 @@ export default {
       tlFour: 'вам нужен',
       subTitle: 'Mobile & UI/Frontend-разработчик, главной целью которого является создание качественных, детально проработанных приложений и интерфейсов',
       tip: '... или используйте свайпы для навигации'
+    },
+    about: {
+      skillsT1: 'Текущий, используемый мною стек',
+      skillsT2: 'Также знаю и использую',
+      t1: 'Личные данные',
+      d1: 'Меня зовут Даниил Сухарников, мне 21 год',
+      t2: 'Опыт',
+      d2: {
+        one: 'Занимаюсь Веб-разработкой уже более 2-х лет, в последний из которых использую фреймворк Vue.js со всей его экосистемой',
+        two: 'Имею большой опыт разработки адаптивных, кроссбраузерных одностраничных приложений любой структуры и сложности',
+        three: 'С недавнего времени пишу на языке Dart и занимаюсь разработкой мобильных приложений с помощью фреймворка Flutter'
+      },
+      t3: 'Локация',
+      d3: 'Казахстан, г. Усть-Каменогорск',
+      t4: 'Образование',
+      d4: {
+        one: 'НАО "ВКТУ им. Д. Серикбаева", 2019 — 2023 гг',
+        two: 'Факультет Информационных технологий и интеллектуальных систем',
+        three: 'Специальность: Вычислительная техника и программное обеспечение'
+      },
+      t5: 'Знание языков',
+      d5: {
+        one: 'Русский — Native',
+        two: 'English — Intermediate (без проблем читаю техническую документацию, разговорный в процессе улучшения)',
+      },
+      t6: 'Личные навыки',
+      d6: 'Внимательность к деталям; Креативность; Ответсвенность; Умение слушать и чётко излагать свои мысли; Честность',
+      t7: 'Доп. информация',
+      d7: 'Перфекционист, насколько это возможно. На 90% состою из любви к музыке и искусству в целом, придерживаюсь философии стоицизма, код личности — ISTJ (вместо тысячи слов)',
     }
   }
 } as LangProps
