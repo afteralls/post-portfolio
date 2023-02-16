@@ -15,7 +15,9 @@ export default {
     global: {
       homeLink: 'Home',
       aboutLink: 'About',
-      portfolioLink: 'Recent Projects'
+      portfolioLink: 'Recent Projects',
+      more: 'More',
+      appLink: 'Go to App'
     },
     home: {
       tlOne: 'Most likely,',
@@ -53,6 +55,12 @@ export default {
       d6: 'Care for details; Creativity; Responsibility; Ability to listen and clearly express my thoughts; Honesty',
       t7: 'Additional Information',
       d7: 'Perfectionist as possible. I\'m 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)',
+    },
+    portfolio: {
+      stackTitle: 'Application stack',
+      descеTitle: 'Short description',
+      descCG: 'Author\'s cloud gallery for fast loading and comfortable viewing of images with an authorization system, photo compression and smart tag search',
+      descBG: 'Аpplication for generating barcodes in various formats with the possibility of customization and export system'
     }
   },
   ru: {
@@ -71,7 +79,9 @@ export default {
     global: {
       homeLink: 'Главная',
       aboutLink: 'Резюме',
-      portfolioLink: 'Последние работы'
+      portfolioLink: 'Последние работы',
+      more: 'Подробнее',
+      appLink: 'Перейти к приложению'
     },
     home: {
       tlOne: 'Скорее всего,',
@@ -109,6 +119,12 @@ export default {
       d6: 'Внимательность к деталям; Креативность; Ответсвенность; Умение слушать и чётко излагать свои мысли; Честность',
       t7: 'Доп. информация',
       d7: 'Перфекционист, насколько это возможно. На 90% состою из любви к музыке и искусству в целом, придерживаюсь философии стоицизма, код личности — ISTJ (вместо тысячи слов)',
+    },
+    portfolio: {
+      stackTitle: 'Стек приложения',
+      descTitle: 'Краткое описание',
+      descCG: 'Авторская облачная галерея для быстрой загрузки и комфортного просмотра изображений с системой авторизации, сжатия изображения и поиска по смарт-тегам',
+      descBG: 'Приложение для генерации штрих-кодов в различных форматах с возможностью кастомизации и экспорта'
     }
   }
 } as LangProps

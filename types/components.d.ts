@@ -65,6 +65,7 @@ declare module '@vue/runtime-core' {
     'PiniaIte,': typeof import('./../src/components/Skills/PiniaIte
     PiniaItem: typeof import('./../src/components/Skills/PiniaItem.vue')['default']
     PortfolioIcon: typeof import('./../src/assets/svg/PortfolioIcon.vue')['default']
+    ProjectItem: typeof import('./../src/components/PortfolioView/ProjectItem.vue')['default']
     PSItem: typeof import('./../src/components/Skills/PSItem.vue')['default']
     PWAItem: typeof import('./../src/components/Skills/PWAItem.vue')['default']
     ReloadIcon: typeof import('./../src/assets/svg/ReloadIcon.vue')['default']
