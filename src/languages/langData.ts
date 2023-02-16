@@ -16,8 +16,11 @@ export default {
       homeLink: 'Home',
       aboutLink: 'About',
       portfolioLink: 'Recent Projects',
-      more: 'More',
-      appLink: 'Go to App'
+      moreLink: 'More',
+      moreTitle: 'Go to repository on GitHub',
+      appLink: 'Go to App',
+      appTitle: 'Go to App page',
+      jsTip:'Of course I know JavaScript, because the above is TypeScript :D'
     },
     home: {
       tlOne: 'Most likely,',
@@ -58,7 +61,7 @@ export default {
     },
     portfolio: {
       stackTitle: 'Application stack',
-      descеTitle: 'Short description',
+      descTitle: 'Short description',
       descCG: 'Author\'s cloud gallery for fast loading and comfortable viewing of images with an authorization system, photo compression and smart tag search',
       descBG: 'Аpplication for generating barcodes in various formats with the possibility of customization and export system'
     }
@@ -80,8 +83,11 @@ export default {
       homeLink: 'Главная',
       aboutLink: 'Резюме',
       portfolioLink: 'Последние работы',
-      more: 'Подробнее',
-      appLink: 'Перейти к приложению'
+      moreLink: 'Подробнее',
+      moreTitle: 'Перейти к репозиторию на GitHub',
+      appLink: 'Перейти к приложению',
+      appTitle: 'Перейти на страницу приложения',
+      jsTip: 'Конечно я знаю JavaScript, ибо выше указан TypeScript :D'
     },
     home: {
       tlOne: 'Скорее всего,',

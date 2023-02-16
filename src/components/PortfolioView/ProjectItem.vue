@@ -4,11 +4,11 @@
   <div :class="{ 'info': true, '_column': true, 'align': revert }">
     <slot name="title" />
     <div class="links _row">
-      <a class="_btn" :href="sourceLink">
+      <a class="_btn" :href="sourceLink" :title="$i18n('global.moreTitle')">
         <GitHubIcon />
-        <small>{{ $i18n('global.more') }}</small>
+        <small>{{ $i18n('global.moreLink') }}</small>
       </a>
-      <a class="_btn" :href="appLink">
+      <a class="_btn" :href="appLink" :title="$i18n('global.appTitle')">
         <small>{{ $i18n('global.appLink') }}</small>
         <ArrowLink />
       </a>

@@ -6,12 +6,7 @@
   </div>
   <small>{{ $i18n('about.skillsT2')}}</small>
   <div class="_stack">
-    <JSItem /><VuexItem /><FirebaseItem /><TailwindItem /><WebpackItem /><DockerItem /><PHPItem /><SQLItem /><PSItem />
-  </div>
-  <div class="_row">
-    <RouterLink to="/portfolio" class="_btn">
-      <small>{{ $i18n('global.portfolioLink')}}</small>
-    </RouterLink>
+    <JSItem :title="$i18n('global.jsTip')" /><VuexItem /><NuxtItem /><FirebaseItem /><TailwindItem /><WebpackItem /><DockerItem /><PHPItem /><SQLItem /><PSItem />
   </div>
 </div>
 </template>

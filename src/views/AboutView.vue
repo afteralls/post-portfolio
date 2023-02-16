@@ -2,7 +2,7 @@
 <div class="_wrapper">
   <div class="resume">
     <AboutInfo />
-    <SkillsSection />
+    <TechsSection />
   </div>
 </div>
 </template>

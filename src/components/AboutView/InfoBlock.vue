@@ -6,10 +6,7 @@
 </template>
 
 <style scoped lang="scss">
-.block {
-  align-items: flex-start;
-  justify-content: flex-start;
-}
+.block { align-items: flex-start; }
 
 .title {
   width: 30%;
