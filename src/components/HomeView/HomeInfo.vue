@@ -4,7 +4,7 @@
     <h3>{{ $i18n('home.tlOne') }}</h3>
     <h1><span :class="{ 'mark': !isDark }">{{ $i18n('home.tlTwo') }}</span>{{ $i18n('home.tlThree') }}<span :class="{ 'mark': !isDark }">{{ $i18n('home.tlFour') }}</span></h1>
   </div>
-  <h4>{{ $i18n('home.subTitle') }}</h4>
+  <p>{{ $i18n('home.subTitle') }}</p>
   <div class="actions _row">
     <RouterLink to="/about" class="_btn" :title="$i18n('global.aboutLink')">
       <small>{{ $i18n('global.aboutLink') }}</small>
@@ -26,6 +26,10 @@ const isDark = useDark()
   text-align: right;
   align-items: flex-end;
   text-transform: uppercase;
+
+  p {
+    font-weight: 700;
+  }
 
   @media (max-width: 920px) {
     order: 2;

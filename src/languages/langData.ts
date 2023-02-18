@@ -88,7 +88,7 @@ export default {
       portfolioLink: 'Последние работы',
       moreLink: 'Подробнее',
       moreTitle: 'Перейти к репозиторию на GitHub',
-      appLink: 'Перейти к приложению',
+      appLink: 'Приложение',
       appTitle: 'Перейти на страницу приложения',
       jsTip: 'Конечно я знаю JavaScript, ибо выше указан TypeScript :D'
     },

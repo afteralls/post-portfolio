@@ -2,7 +2,7 @@
 <div class="_row">
   <small>{{ $i18n('nav.darkMode') }}</small>
   <div class="switch">
-    <input id="switch" class="switch-input" name="switch" type="checkbox" v-model="isDark">
+    <input type="checkbox" id="switch" class="switch-input" v-model="isDark">
     <label class="switch-toggler" for="switch"></label>
   </div>
 </div>
