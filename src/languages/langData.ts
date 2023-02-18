@@ -33,6 +33,9 @@ export default {
     about: {
       skillsT1: 'The current stack I\'m using',
       skillsT2: 'I also know and use',
+      downloadT: 'Download resume in PDF format',
+      downloadBtn: 'Download',
+      downloadTip: 'You can change the theme or language and the downloaded file will adapt to your preferences',
       t1: 'Personal details',
       d1: 'My name is Daniil Sukharnikov, I\'m 21 years old',
       t2: 'Experience',
@@ -55,7 +58,7 @@ export default {
         two: 'English — Intermediate (I read technical documentation without problems, speaking in the process of improvement)',
       },
       t6: 'Soft Skills',
-      d6: 'Care for details; Creativity; Responsibility; Ability to listen and clearly express my thoughts; Honesty',
+      d6: 'Care for details; Creativity; Responsibility; Honesty',
       t7: 'Additional Information',
       d7: 'Perfectionist as possible. I\'m 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)',
     },
@@ -100,6 +103,9 @@ export default {
     about: {
       skillsT1: 'Текущий, используемый мною стек',
       skillsT2: 'Также знаю и использую',
+      downloadT: 'Скачать резюме в PDF-формате',
+      downloadBtn: 'Скачать',
+      downloadTip: 'Вы можете изменить тему или язык, и загружаемый файл будет адаптирован под ваши предпочтения',
       t1: 'Личные данные',
       d1: 'Меня зовут Даниил Сухарников, мне 21 год',
       t2: 'Опыт',
@@ -112,7 +118,7 @@ export default {
       d3: 'Казахстан, г. Усть-Каменогорск',
       t4: 'Образование',
       d4: {
-        one: 'НАО "ВКТУ им. Д. Серикбаева", 2019 — 2023 гг',
+        one: 'НАО "ВКТУ им. Д. Серикбаева", 2019 — 2023 гг.',
         two: 'Факультет Информационных технологий и интеллектуальных систем',
         three: 'Специальность: Вычислительная техника и программное обеспечение'
       },
@@ -122,14 +128,14 @@ export default {
         two: 'English — Intermediate (без проблем читаю техническую документацию, разговорный в процессе улучшения)',
       },
       t6: 'Личные навыки',
-      d6: 'Внимательность к деталям; Креативность; Ответсвенность; Умение слушать и чётко излагать свои мысли; Честность',
+      d6: 'Внимательность к деталям; Креативность; Ответсвенность; Честность',
       t7: 'Доп. информация',
       d7: 'Перфекционист, насколько это возможно. На 90% состою из любви к музыке и искусству в целом, придерживаюсь философии стоицизма, код личности — ISTJ (вместо тысячи слов)',
     },
     portfolio: {
       stackTitle: 'Стек приложения',
       descTitle: 'Краткое описание',
-      descCG: 'Авторская облачная галерея для быстрой загрузки и комфортного просмотра изображений с системой авторизации, сжатия изображения и поиска по смарт-тегам',
+      descCG: 'Авторская облачная галерея для быстрой загрузки и комфортного просмотра изображений с системой авторизации, сжатия изображений и поиска по смарт-тегам',
       descBG: 'Приложение для генерации штрих-кодов в различных форматах с возможностью кастомизации и экспорта'
     }
   }

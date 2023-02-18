@@ -6,10 +6,10 @@
   </div>
   <h4>{{ $i18n('home.subTitle') }}</h4>
   <div class="actions _row">
-    <RouterLink to="/about" class="_btn">
+    <RouterLink to="/about" class="_btn" :title="$i18n('global.aboutLink')">
       <small>{{ $i18n('global.aboutLink') }}</small>
     </RouterLink>
-    <RouterLink to="/portfolio" class="_btn">
+    <RouterLink to="/portfolio" class="_btn" :title="$i18n('global.portfolioLink')">
       <small>{{ $i18n('global.portfolioLink') }}</small>
     </RouterLink>
   </div>

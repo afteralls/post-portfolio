@@ -14,6 +14,7 @@ declare module '@vue/runtime-core' {
     DartItem: typeof import('./../src/components/Techs/DartItem.vue')['default']
     DockerItem: typeof import('./../src/components/Techs/DockerItem.vue')['default']
     EmailIcon: typeof import('./../src/assets/svg/EmailIcon.vue')['default']
+    FigmaItem: typeof import('./../src/components/Techs/FigmaItem.vue')['default']
     FirebaseItem: typeof import('./../src/components/Techs/FirebaseItem.vue')['default']
     FlutterItem: typeof import('./../src/components/Techs/FlutterItem.vue')['default']
     GitHubIcon: typeof import('./../src/assets/svg/GitHubIcon.vue')['default']

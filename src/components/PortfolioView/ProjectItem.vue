@@ -4,11 +4,11 @@
   <div :class="{ 'info': true, '_column': true, 'align': revert }">
     <slot name="title" />
     <div class="links _row">
-      <a class="_btn" :href="sourceLink" :title="$i18n('global.moreTitle')">
+      <a class="_btn" target="_blank" :href="sourceLink" :title="$i18n('global.moreTitle')">
         <GitHubIcon />
         <small>{{ $i18n('global.moreLink') }}</small>
       </a>
-      <a class="_btn" :href="appLink" :title="$i18n('global.appTitle')">
+      <a class="_btn" target="_blank" :href="appLink" :title="$i18n('global.appTitle')">
         <small>{{ $i18n('global.appLink') }}</small>
         <ArrowLink />
       </a>
@@ -63,11 +63,7 @@ defineProps<{
 
 .links {
   & > ._btn {
-    padding: 12px;
-  }
-
-  @media (max-width: 450px) {
-    flex-direction: column;
+    padding: 14px;
   }
 }
 
