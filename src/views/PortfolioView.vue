@@ -2,7 +2,7 @@
 <div class="_wrapper">
   <div class="portfolio">
     <ProjectItem
-      source-link="https://github.com/post-apocalypse/cloud-gallery"
+      source-link="https://github.com/afteralls/cloud-gallery"
       app-link="https://cloud-gallery.web.app/"
       :revert="true"
     >
@@ -14,7 +14,7 @@
       <template #desc><h4>{{ $i18n('portfolio.descCG') }}</h4></template>
     </ProjectItem>
     <ProjectItem
-      source-link="https://github.com/post-apocalypse/barcode-generator"
+      source-link="https://github.com/afteralls/qb-generator"
       app-link="https://generator-space.web.app/"
     >
       <template #img><img src="../assets/img/BG.webp" alt="#"></template>

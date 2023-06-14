@@ -35,10 +35,6 @@
     <template #title>{{ $i18n('about.t6')}}</template>
     <template #desc><h4>{{ $i18n('about.d6')}}</h4></template>
   </InfoBlock>
-  <InfoBlock>
-    <template #title>{{ $i18n('about.t7')}}</template>
-    <template #desc><h4>{{ $i18n('about.d7')}}</h4></template>
-  </InfoBlock>
 </div>
 </template>
 

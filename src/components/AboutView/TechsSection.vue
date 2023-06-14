@@ -20,25 +20,20 @@
 
 <script setup lang="ts">
 const linkArr: { [key: string]: string } = {
-  darkEN: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Dark-EN.pdf?alt=media&token=230f48af-36f9-4bc6-8ca6-9228b97023c3',
-  lightEN: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Light-EN.pdf?alt=media&token=3c3cb056-3372-4fca-ac6e-6f033e7ff87b',
-  darkRU: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Dark-RU.pdf?alt=media&token=0c34324d-f94f-4eaf-a123-3240869ff093',
-  lightRU: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Light-RU.pdf?alt=media&token=8b76c739-22ad-4e30-8dd0-2185f028e4f0'
+  darkEN: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Dark-EN.pdf?alt=media&token=8fd38d7f-f551-4d61-a335-88b4a2b7691a',
+  lightEN: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Light-EN.pdf?alt=media&token=7cd4263f-1934-4c39-b7b5-8864596415b3',
+  darkRU: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Dark-RU.pdf?alt=media&token=52b8d564-16ca-46fe-b432-11c92cafc332',
+  lightRU: 'https://firebasestorage.googleapis.com/v0/b/post-portfolio.appspot.com/o/Light-RU.pdf?alt=media&token=d541cf24-4cf3-4c34-a44b-b678e854b0bd'
 }
+
+const linkHandler = (href: string) => window.open(href, '_blank')
 
 const downloadResume = () => {
   const isDark = useDark()
   const lang: string | null = localStorage.getItem('lang')
-  switch (isDark.value) {
-    case true: lang === 'en'
-      ? window.open(linkArr.darkEN, '_blank')
-      : window.open(linkArr.darkRU, '_blank')
-      break
-    case false: lang === 'en'
-      ? window.open(linkArr.lightEN, '_blank')
-      : window.open(linkArr.lightRU, '_blank')
-      break
-  }
+  isDark.value
+    ? lang === 'en' ? linkHandler(linkArr.darkEN) : linkHandler(linkArr.darkRU)
+    : lang === 'en' ? linkHandler(linkArr.lightEN) : linkHandler(linkArr.lightRU)
 }
 </script>
 

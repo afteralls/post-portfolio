@@ -40,7 +40,7 @@ export default {
       d1: 'My name is Daniil Sukharnikov, I\'m 21 years old',
       t2: 'Experience',
       d2: {
-        one: 'I\'ve been a web developer for over 2 years, last of which I use Vue.JS Framework with its entire ecosystem',
+        one: 'I\'ve been a Front-End developer for over 2 years, with the main focus on Vue.js ecosystem',
         two: 'I have extensive experience in developing adaptive, cross-browser Single Page Applications of any complexity and structure',
         three: 'Recently, I\'ve been writing in Dart language, developing mobile applications using Flutter framework'
       },
@@ -55,12 +55,10 @@ export default {
       t5: 'Knowledge Of Languages',
       d5: {
         one: 'Russian — Native',
-        two: 'English — Intermediate (I read technical documentation without problems, speaking in the process of improvement)',
+        two: 'English — Intermediate',
       },
-      t6: 'Soft Skills',
-      d6: 'Care for details; Creativity; Responsibility; Honesty',
-      t7: 'Additional Information',
-      d7: 'Perfectionist as possible. I\'m 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)',
+      t6: 'Additional Information',
+      d6: 'Perfectionist as possible. I\'m 90% love for music and art in general, I adhere to the philosophy of stoicism, the personality code is ISTJ (instead of a thousand words)',
     },
     portfolio: {
       stackTitle: 'Application stack',
@@ -119,18 +117,16 @@ export default {
       t4: 'Образование',
       d4: {
         one: 'НАО "ВКТУ им. Д. Серикбаева", 2019 — 2023 гг.',
-        two: 'Факультет Информационных технологий и интеллектуальных систем',
+        two: 'Факультет информационных технологий и интеллектуальных систем',
         three: 'Специальность: Вычислительная техника и программное обеспечение'
       },
       t5: 'Знание языков',
       d5: {
-        one: 'Русский — Native',
-        two: 'English — Intermediate (без проблем читаю техническую документацию, разговорный в процессе улучшения)',
+        one: 'Русский — Полное владение',
+        two: 'English — Intermediate',
       },
-      t6: 'Личные навыки',
-      d6: 'Внимательность к деталям; Креативность; Ответственность; Честность',
-      t7: 'Доп. информация',
-      d7: 'Перфекционист насколько это возможно. На 90% состою из любви к музыке и искусству в целом, придерживаюсь философии стоицизма, код личности — ISTJ (вместо тысячи слов)',
+      t6: 'Доп. информация',
+      d6: 'Перфекционист насколько это возможно. На 90% состою из любви к музыке и искусству в целом, придерживаюсь философии стоицизма, код личности — ISTJ (вместо тысячи слов)',
     },
     portfolio: {
       stackTitle: 'Стек приложения',
