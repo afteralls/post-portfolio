@@ -1,0 +1,69 @@
+@import './variables';
+@import './mixins';
+@import './globalStyles';
+
+._link {
+  @include all-cent;
+  text-decoration: none;
+  padding: $mSpace;
+  border-radius: $br-rad;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.5vh;
+  transition: $transition;
+  gap: $mSpace / 2;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 75%;
+    height: 0.5vh;
+    background-color: $mColor;
+    transition: 0.15s ease-out;
+    opacity: 0;
+    transform: translateY(0.8vh);
+  }
+
+  &:hover {
+    &::after {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  &-active {
+    background-color: $mColor;
+  }
+
+  &-active:hover {
+    &::after {
+      opacity: 0;
+    }
+  }
+
+  &-active::after {
+    opacity: 0;
+  }
+
+  @media (max-width: $extra-small) {
+    &::after {
+      display: none;
+    }
+  }
+}
+
+._column {
+  display: flex;
+  flex-direction: column;
+  gap: $mSpace;
+}
+
+._row {
+  display: flex;
+  gap: $mSpace;
+  align-items: center;
+}
