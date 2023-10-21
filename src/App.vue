@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <TheNavbar />
   <AppBackground class="app-background full-fixed" />
   <div class="app-wrapper full-fixed"></div>
@@ -46,5 +47,52 @@ watch(direction, (v) => {
   top: 0;
   height: 100vh;
   width: 100vw;
+=======
+  <div class="container">
+    <the-navbar/>
+    <router-view v-slot="{ Component }">
+      <Transition name="route" mode="out-in">
+        <component :is="Component" />
+      </Transition>
+    </router-view>
+  </div>
+</template>
+
+<script>
+import TheNavbar from './components/TheNavbar'
+
+export default { components: { TheNavbar } }
+</script>
+
+<style lang="scss">
+@import './assets/scss/main';
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.route {
+  &-enter-from {
+    opacity: 0;
+
+    @media (max-width: $extra-medium) {
+      transform: none;
+    }
+  }
+  &-enter-active {
+    transition: all 0.2s ease-out;
+  }
+  &-leave-to {
+    opacity: 0;
+
+    @media (max-width: $extra-medium) {
+      transform: none;
+    }
+  }
+  &-leave-active {
+    transition: all 0.2s ease-in;
+  }
+>>>>>>> 7eb84931384b9ac9328600c140af9658714b73f3
 }
 </style>
