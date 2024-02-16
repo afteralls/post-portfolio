@@ -1,21 +1,4 @@
 {
-  "extends": "@vue/tsconfig/tsconfig.web.json",
-  "include": [
-    "./types/imports.d.ts",
-    "./types/components.d.ts",
-    "./types/env.d.ts",
-    "./src/**/*"
-  ],
-  "compilerOptions": {
-    "baseUrl": ".",
-    "useUnknownInCatchVariables": false,
-    "paths": {
-      "@/*": ["./src/*"]
-    }
-  },
-  "references": [
-    {
-      "path": "./tsconfig.config.json"
-    }
-  ]
+  // https://nuxt.com/docs/guide/concepts/typescript
+  "extends": "./.nuxt/tsconfig.json"
 }
