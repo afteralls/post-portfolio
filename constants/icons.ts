@@ -9,5 +9,7 @@ export const $ICON = {
 
   system: 'material-symbols:hdr-auto-rounded',
   light: 'tabler:sun-filled',
-  dark: 'iconamoon:mode-dark-fill'
+  dark: 'iconamoon:mode-dark-fill',
+
+  more: 'pajamas:details-block'
 }

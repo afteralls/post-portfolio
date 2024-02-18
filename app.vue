@@ -3,7 +3,7 @@
     <AppHeader />
     <USpace layout="container">
       <USpace layout="wrapper">
-        <div></div>
+        <AppHome />
       </USpace>
     </USpace>
   </div>

@@ -1,12 +1,13 @@
 <template>
   <USpace type="section" display="row" pos="between" full class="home">
     <USpace display="col" class="info">
-      <UText type="p" gray mode="bg" :text="$t('app.home.hi')" />
-      <UText type="h1" text="" />
-      <UText type="p" gray mode="bg" text="" />
+      <UText type="p" gray mode="bg" :text="$t('home.hi')" />
+      <UText type="h1" text="UI/Front-End Developer" />
+      <UText type="p" gray :text="$t('home.desc')" />
+      <ULink to="/" :title="$t('home.more')" :icon="$ICON.more" mode="hybrid" />
     </USpace>
     <USpace mode="center" class="logo-wrapper">
-      <UIcon size="full" name="icon" />
+      <img src="../../assets/graphics/main.png" alt="Main" />
     </USpace>
   </USpace>
 </template>
@@ -29,11 +30,16 @@
 }
 
 .logo-wrapper {
+  width: toRem(550);
   filter: drop-shadow(0 0 10rem var(--m));
-  width: toRem(350);
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
 
   @media (max-width: $lg) {
-    width: toRem(200);
+    width: toRem(400);
   }
 
   @media (max-width: $zf) {
