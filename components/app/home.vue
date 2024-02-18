@@ -42,7 +42,7 @@
     width: toRem(400);
   }
 
-  @media (max-width: $zf) {
+  @media (max-width: $mob) {
     width: 100%;
   }
 }

@@ -4,6 +4,7 @@
     <USpace layout="container">
       <USpace layout="wrapper">
         <AppHome />
+        <AppInfo />
       </USpace>
     </USpace>
   </div>
