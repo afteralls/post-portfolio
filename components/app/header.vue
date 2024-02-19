@@ -51,7 +51,6 @@ const themeConfig: Record<ColorMode, ColorMode> = { system: 'dark', dark: 'light
   z-index: 85;
   backdrop-filter: blur(8px);
   background: linear-gradient(180deg, var(--bg) 0%, var(--tp) 100%);
-  border-bottom: toRem(1) solid var(--br);
 }
 
 .divider {

@@ -42,7 +42,6 @@
 
 <script setup lang="ts">
 type Field = { title?: string; desc: string | string[]; list?: string[] }
-type Skill = { name: string; icon: string; rgb: string }
 type SkillCollection = { title: string; skills: Skill[] }
 
 const fieldCollection: Field[] = [

@@ -1,7 +1,7 @@
 <template>
   <USpace display="row" gap="sm" :style="`background-color: rgba(${rgb}, 0.2)`" class="skill">
     <UIcon :name="icon" />
-    <UText :text="name" />
+    <UText type="p" :text="name" />
   </USpace>
 </template>
 
