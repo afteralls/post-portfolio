@@ -20,7 +20,7 @@
 <script setup lang="ts">
 const projects: Project[] = [
   {
-    banner: '/ui.png',
+    banner: '/ui.webp',
     title: 'UI Kit',
     sourse: 'https://github.com/afteralls/ui',
     skills: [
@@ -33,7 +33,7 @@ const projects: Project[] = [
     ]
   },
   {
-    banner: '/gallery.png',
+    banner: '/gallery.webp',
     title: 'Cloud Gallery',
     legacy: true,
     sourse: 'https://github.com/afteralls/cloud-gallery',
@@ -51,7 +51,7 @@ const projects: Project[] = [
     ]
   },
   {
-    banner: '/generator.png',
+    banner: '/generator.webp',
     title: 'QB Generator',
     legacy: true,
     sourse: 'https://github.com/afteralls/qb-generator',

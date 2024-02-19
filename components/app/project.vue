@@ -6,7 +6,7 @@
       <UText v-if="legacy" gray text="(Legacy)" />
     </USpace>
     <UText type="p" gray :text="desc" />
-    <USpace display="row" class="adaptive">
+    <USpace display="row">
       <ULink :to="sourse" :title="$t('projects.source')" :icon="$ICON.github" global mode="icon" />
       <ULink
         v-if="app"
@@ -48,12 +48,5 @@ img {
   height: toRem(200);
   object-fit: cover;
   border-radius: var(--br-rad);
-}
-
-.adaptive {
-  @media (max-width: $zf) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
 }
 </style>
