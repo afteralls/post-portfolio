@@ -4,7 +4,7 @@
       <UText type="p" gray mode="bg" :text="$t('home.hi')" />
       <UText type="h1" text="UI/Front-End Developer" />
       <UText type="p" gray :text="$t('home.desc')" />
-      <ULink to="/" :title="$t('home.more')" :icon="$ICON.more" mode="hybrid" />
+      <ULink to="/#info" :title="$t('home.more')" :icon="$ICON.more" mode="hybrid" />
     </USpace>
     <USpace mode="center" class="logo-wrapper">
       <img src="../../assets/graphics/main.png" alt="Main" />

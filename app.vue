@@ -1,13 +1,7 @@
 <template>
-  <div id="app">
-    <AppHeader />
-    <USpace layout="container">
-      <USpace layout="wrapper">
-        <AppHome />
-        <AppInfo />
-      </USpace>
-    </USpace>
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+  </NuxtLayout>
 </template>
 
 <script setup lang="ts">
@@ -22,4 +16,22 @@ useHead({
     { name: 'theme-color', content: () => (colorMode.value === 'dark' ? '#0c0c0d' : '#ffffff') }
   ]
 })
+
+const router = useRouter()
+router.options.scrollBehavior = (to, _, savedPosition) => {
+  if (to.hash) {
+    return {
+      el: to.hash,
+      top: 100,
+      behavior: 'smooth'
+    }
+  } else if (savedPosition) {
+    return savedPosition
+  } else {
+    return {
+      top: 0,
+      behavior: 'smooth'
+    }
+  }
+}
 </script>
