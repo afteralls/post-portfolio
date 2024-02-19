@@ -7,7 +7,7 @@ declare global {
     banner: string
     legacy?: boolean
     title: string
-    desc: string
+    desc?: string
     sourse: string
     app?: string
     skills: Skill[]

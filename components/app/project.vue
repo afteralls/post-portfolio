@@ -7,17 +7,17 @@
     </USpace>
     <UText type="p" gray :text="desc" />
     <USpace display="row" class="adaptive">
-      <ULink :to="sourse" title="Исходный код" :icon="$ICON.github" global mode="icon" />
+      <ULink :to="sourse" :title="$t('projects.source')" :icon="$ICON.github" global mode="icon" />
       <ULink
         v-if="app"
         :to="app"
-        title="Приложение"
+        :title="$t('projects.app')"
         icon="icon-park-solid:more-app"
         global
         mode="icon"
       />
     </USpace>
-    <UText type="span" text="Стек приложения" />
+    <UText type="span" :text="$t('projects.stack')" />
     <USpace display="row" gap="bit" style="flex-wrap: wrap">
       <AppSkill
         v-for="(skill, num) in skills"

@@ -3,10 +3,10 @@
     <USpace display="grid" pos="between" class="info">
       <USpace display="col">
         <USpace v-for="(field, idx) in fieldCollection" :key="idx" display="grid" class="field">
-          <UText type="span" :text="field.title ? field.title : ''" class="align" />
-          <UText v-if="typeof field.desc === 'string'" type="p" gray :text="field.desc" />
+          <UText type="span" :text="field.title ? $t(field.title) : ''" class="align" />
+          <UText v-if="typeof field.desc === 'string'" type="p" gray :text="$t(field.desc)" />
           <USpace v-else display="col" gap="bit">
-            <UText v-for="(note, num) in field.desc" :key="num" type="p" :text="note" />
+            <UText v-for="(note, num) in field.desc" :key="num" type="p" :text="$t(note)" />
             <template v-if="field.list">
               <USpace
                 v-for="(note, num) in field.list"
@@ -16,7 +16,7 @@
                 style="align-items: flex-start"
               >
                 <UText type="p" gray text="—" />
-                <UText type="p" gray :text="note" />
+                <UText type="p" gray :text="$t(note)" />
               </USpace>
             </template>
           </USpace>
@@ -24,7 +24,7 @@
       </USpace>
       <USpace display="col" class="skills">
         <template v-for="(item, idx) in skillCollection" :key="idx">
-          <UText type="span" :text="item.title" />
+          <UText type="span" :text="$t(item.title)" />
           <USpace display="row" gap="bit" style="flex-wrap: wrap" class="skill-wrapper">
             <AppSkill
               v-for="(skill, num) in item.skills"
@@ -45,48 +45,28 @@ type Field = { title?: string; desc: string | string[]; list?: string[] }
 type SkillCollection = { title: string; skills: Skill[] }
 
 const fieldCollection: Field[] = [
+  { title: 'info.0.title', desc: 'info.0.desc' },
+  { title: 'info.1.title', desc: 'info.1.desc' },
   {
-    title: 'Личная информация',
-    desc: 'Меня зовут Даниил Сухарников, мне 22 года; перфекционист насколько это возможно; на 90% состою из любви к музыке и искусству в целом, придерживаюсь философии стоицизма, код личности — ISTJ (вместо тысячи слов)'
+    title: 'info.2.title',
+    desc: ['info.2.desc.0', 'info.2.desc.1'],
+    list: ['info.2.list.0', 'info.2.list.1', 'info.2.list.2']
   },
   {
-    title: 'Локация',
-    desc: 'Казахстан, г. Усть-Каменогорск'
+    desc: ['info.3.desc.0', 'info.3.desc.1'],
+    list: ['info.3.list.0', 'info.3.list.1', 'info.3.list.2']
   },
   {
-    title: 'Опыт работы',
-    desc: ['Июль 2023 — Наст. время', 'Fullstack Developer в ТОО "Altyn Shyghys"'],
-    list: [
-      'Разработка мультиязычной, модульной системы автоматизации производственных процессов (Nuxt, SSR)',
-      'Настройка сабдоменной структуры (Nginx), CI/CD, Linux-администрирование и прочие DevOps-обязанности',
-      'Разработка UI-Kit: библиотека компонентов и SSR конфигурации для проектов на Nuxt'
-    ]
+    title: 'info.4.title',
+    desc: ['info.4.desc.0', 'info.4.desc.1'],
+    list: ['info.4.list.0', 'info.4.list.1']
   },
-  {
-    desc: ['Октябрь 2021 — Июль 2023', 'Фрилансер'],
-    list: [
-      'Разработка различных клиентких приложений и лендингов на Vue.js (SPA, SSG, SSR)',
-      'Создание макетов и дизайнерских решений',
-      'Разработка мобильных приложений и публикация в App Store и Google Play (Flutter)'
-    ]
-  },
-  {
-    title: 'Образование',
-    desc: ['Двухдипломная программа (Магистратура, Информционные технологии)', '2023 — 2025 гг.'],
-    list: [
-      'НАО "ВКТУ им. Д. Серикбаева", г. Усть-Каменогорск, Казахстан',
-      'НИЯУ МИФИ, г. Москва, Россия'
-    ]
-  },
-  {
-    desc: ['Бакалавр в области информационно-коммуникационных технологий', '2019 — 2023 гг.'],
-    list: ['НАО "ВКТУ им. Д. Серикбаева", г. Усть-Каменогорск, Казахстан']
-  }
+  { desc: ['info.5.desc.0', 'info.5.desc.1'], list: ['info.5.list.0'] }
 ]
 
 const skillCollection: SkillCollection[] = [
   {
-    title: 'Текущий технический стек',
+    title: 'info.skill.0',
     skills: [
       { name: 'Vue', icon: 'logos:vue', rgb: '65, 184, 131' },
       { name: 'Nuxt', icon: 'logos:nuxt-icon', rgb: '0, 220, 130' },
@@ -103,7 +83,7 @@ const skillCollection: SkillCollection[] = [
     ]
   },
   {
-    title: 'Также имею опыт работы',
+    title: 'info.skill.1',
     skills: [
       { name: 'Vuex', icon: 'logos:vue', rgb: '65, 184, 131' },
       { name: 'Vitest', icon: 'logos:vitest', rgb: '114, 155, 27' },

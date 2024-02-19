@@ -1,13 +1,13 @@
 <template>
   <USpace type="section" display="col" pos="left" full class="home">
-    <UText type="h2" text="Недавние проекты" />
+    <UText type="h2" :text="$t('projects.recent')" />
     <USpace display="grid" class="project-wrapper" full>
       <AppProject
         v-for="(project, idx) in projects"
         :key="idx"
         :banner="project.banner"
         :title="project.title"
-        :desc="project.desc"
+        :desc="$t(`projects.${idx}`)"
         :legacy="project.legacy"
         :app="project.app"
         :sourse="project.sourse"
@@ -22,7 +22,6 @@ const projects: Project[] = [
   {
     banner: '/ui.png',
     title: 'UI Kit',
-    desc: 'UI-библиотека и готовая конфигурация SSR для проектов, разработанных на фреймворке Nuxt',
     sourse: 'https://github.com/afteralls/ui',
     skills: [
       { name: 'Vue', icon: 'logos:vue', rgb: '65, 184, 131' },
@@ -37,7 +36,6 @@ const projects: Project[] = [
     banner: '/gallery.png',
     title: 'Cloud Gallery',
     legacy: true,
-    desc: 'Авторская облачная галерея для быстрой загрузки и комфортного просмотра изображений с системой авторизации, сжатия изображений и поиска по смарт-тегам',
     sourse: 'https://github.com/afteralls/cloud-gallery',
     app: 'https://cloud-gallery.web.app/',
     skills: [
@@ -56,7 +54,6 @@ const projects: Project[] = [
     banner: '/generator.png',
     title: 'QB Generator',
     legacy: true,
-    desc: 'Приложение для генерации штрих-кодов в различных форматах с возможностью кастомизации и экспорта',
     sourse: 'https://github.com/afteralls/qb-generator',
     app: 'https://qb-generator.web.app/',
     skills: [
