@@ -7,7 +7,7 @@
       <ULink to="/#info" :title="$t('home.more')" :icon="$ICON.more" mode="hybrid" />
     </USpace>
     <USpace mode="center" class="logo-wrapper">
-      <img src="/main.webp" width="550" height="auto" alt="Banner" />
+      <img src="/main.webp" width="550" height="513" alt="Banner" />
     </USpace>
   </USpace>
 </template>
