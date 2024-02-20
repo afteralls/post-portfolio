@@ -1,8 +1,10 @@
 export default defineNuxtConfig({
   extends: ['github:afteralls/ui'],
+
   imports: {
     dirs: ['./constants']
   },
+
   i18n: {
     langDir: './locale/lang',
     locales: [
@@ -10,7 +12,12 @@ export default defineNuxtConfig({
       { code: 'ru', name: 'Русский', file: 'ru.ts' }
     ]
   },
+
   app: {
     head: { title: 'Portfolio' }
+  },
+
+  devtools: {
+    enabled: true
   }
 })
