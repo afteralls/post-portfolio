@@ -7,18 +7,19 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const title = 'UI/Front-End Developer'
-const desc = 'My main goal is to create high-quality, detailed applications and interfaces'
+const desc = computed(() => t('home.desc'))
 const image = '/main.webp'
 
 useSeoMeta({
-  description: desc,
+  description: () => desc.value,
   ogTitle: title,
-  ogDescription: desc,
+  ogDescription: () => desc.value,
   ogImage: image,
   ogUrl: 'https://afteralls.netlify.app/',
   twitterTitle: title,
-  twitterDescription: desc,
+  twitterDescription: () => desc.value,
   twitterImage: image,
   twitterCard: 'summary'
 })
