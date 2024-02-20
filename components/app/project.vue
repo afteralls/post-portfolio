@@ -1,6 +1,6 @@
 <template>
   <USpace display="col" block="alt" full>
-    <img :src="banner" />
+    <NuxtImg :src="banner" :alt="title" />
     <USpace display="row" gap="sm" style="align-items: flex-end">
       <UText type="h3" :text="title" />
       <UText v-if="legacy" gray text="(Legacy)" />

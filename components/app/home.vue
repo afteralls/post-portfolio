@@ -7,7 +7,7 @@
       <ULink to="/#info" :title="$t('home.more')" :icon="$ICON.more" mode="hybrid" />
     </USpace>
     <USpace mode="center" class="logo-wrapper">
-      <img src="../../assets/graphics/main.png" alt="Main" />
+      <NuxtImg src="/main.webp" alt="Banner" />
     </USpace>
   </USpace>
 </template>
@@ -35,11 +35,11 @@
 
   img {
     width: 100%;
-    height: 100%;
+    height: auto;
   }
 
   @media (max-width: $lg) {
-    width: toRem(400);
+    width: toRem(350);
   }
 
   @media (max-width: $mob) {
