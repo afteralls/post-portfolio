@@ -7,7 +7,7 @@
       <ULink to="/#info" :title="$t('home.more')" :icon="$ICON.more" mode="hybrid" />
     </USpace>
     <USpace mode="center" class="logo-wrapper">
-      <NuxtImg src="/main.webp" sizes="550px lg:350px mob:100%" alt="Banner" />
+      <img src="/main.webp" width="550" height="auto" alt="Banner" />
     </USpace>
   </USpace>
 </template>
